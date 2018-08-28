@@ -104,7 +104,7 @@ header .navbar-dark {
 /* SIDE NAVIGATION
 ------------------------------------------ */
 .side-navigation {
-    left: -100px;
+    left: -120px;
     position: fixed;
     top: 20px;
     transition: left 500ms;
