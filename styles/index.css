@@ -598,7 +598,7 @@ footer ul li a:hover {
 .section-roadmap {
     background-color: #FFFFFF;
     position: relative;
-    padding: 100px 0 50px;
+    padding: 190px 0 50px;
 }
 
 @-moz-keyframes pulse {
@@ -842,9 +842,9 @@ footer ul li a:hover {
 /* DOWNLOAD WHITEPAPER
 -------------------------------------- */
 .section-whitepaper {
-    background: #222629;
+    background: #007AFF;
     color: #FFFFFF;
-    padding: 50px 0 265px;
+    padding: 100px 0 265px;
     position: relative;
 }
 
@@ -852,11 +852,16 @@ footer ul li a:hover {
     background: url(../images/squares.svg) repeat-x;
     bottom: 0;
     content: '';
-    height: 291px;
-    margin-bottom: -44px;
+    height: 287px;
+    margin-bottom: -62px;
     position: absolute;
     right: 0;
     width: 100%;
+    z-index: 100;
+}
+
+.section-whitepaper h2 {
+    margin-bottom: 50px;
 }
 
 .section-whitepaper .section-description {
@@ -893,6 +898,13 @@ footer ul li a:hover {
     border-radius: 20px;
     margin-top: 10px;
     width: 370px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.section-whitepaper .download-list .download-item a:hover {
+    background: #FFFFFF;
+    color: #007BFF;
 }
 
 /* TOKEN MARKET SALES
