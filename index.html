@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Monico</title>
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="icon" type="image/gif" href="favicon.gif" />
+
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <!-- BOOTSTRAP CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" type="text/css" href="styles/index.css?v=8">
+        <link rel="stylesheet" type="text/css" href="styles/responsive.css?v=3">
+
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    </head>
+    <body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <h1 class="monico-logo">
+                        <a class="navbar-brand" href="#">
+                            <img width="150" alt="Monico" src="images/monico-logo-white.svg?v=1" />
+                        </a>
+                    </h1>
+                    <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        </ul>
+                        <ul class="navbar-nav my-2 my-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link scroll-to" href="#section-pain-points">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-plain nav-link" href="#">SIGN UP FOR AIRDROP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <div class="side-navigation">
+                <ul class="list-group list-unstyled">
+                    <li class="side-menu" id="side-nav-hero">
+                        <a href="#section-hero" class="scroll-to"></a>
+                        <span>HOME</span>
+                    </li>
+                    <li class="side-menu" id="side-nav-pain-points">
+                        <a href="#section-pain-points" class="scroll-to"></a>
+                        <span>PAIN POINTS AND CHALLENGES</span>
+                    </li>
+                    <li class="side-menu" id="side-nav-token-market-sales">
+                        <a href="#section-token-market-sales" class="scroll-to"></a>
+                        <span>TOKEN MARKET SALES</span>
+                    </li>
+                    <li class="side-menu" id="side-nav-opportunity-to-seize">
+                        <a href="#section-opportunity-to-seize" class="scroll-to"></a>
+                        <span>AN OPPORTUNITY TO SEIZE</span>
+                    </li>
+                    <li class="side-menu" id="side-nav-cold-wallet">
+                        <a href="#section-cold-wallet" class="scroll-to"></a>
+                        <span>COLD WALLET</span>
+                    </li>
+                    <li class="side-menu" id="side-nav-community">
+                        <a href="#section-community" class="scroll-to"></a>
+                        <span>COMMUNITY</span>
+                    </li>
+                    <li class="side-menu" id="side-nav-ecosystem">
+                        <a href="#section-ecosystem" class="scroll-to"></a>
+                        <span>ECOSYSTEM</span>
+                    </li>
+                    <!--
+                    <li class="side-menu" id="side-nav-whitepaper">
+                        <a href="#section-whitepaper" class="scroll-to"></a>
+                        <span>WHITEPAPER</span>
+                    </li> -->
+                    <!--
+                    <li class="side-menu" id="side-nav-token-info">
+                        <a href="#section-token-info" class="scroll-to"></a>
+                        <span>TOKEN INFO</span>
+                    </li> -->
+                    <!--
+                    <li class="side-menu" id="side-nav-token-distribution">
+                        <a href="#section-token-distribution" class="scroll-to"></a>
+                        <span>TOKEN DISTRIBUTION</span>
+                    </li> -->
+                    <li class="side-menu" id="side-nav-roadmap">
+                        <a href="#section-roadmap" class="scroll-to"></a>
+                        <span>ROADMAP</span>
+                    </li>
+                    <!--
+                    <li class="side-menu" id="side-nav-news">
+                        <a href="#section-news" class="scroll-to"></a>
+                        <span>NEWS</span>
+                    </li> -->
+                    <!--
+                    <li class="side-menu" id="side-nav-partnership">
+                        <a href="#section-partnership" class="scroll-to"></a>
+                        <span>PARTNERSHIP</span>
+                    </li> -->
+                    <!--
+                    <li class="side-menu" id="side-nav-our-team-advisors">
+                        <a href="#section-our-team-advisors" class="scroll-to"></a>
+                        <span>OUR TEAM AND ADVISORS</span>
+                    </li> -->
+                    <li class="side-menu" id="side-nav-call-to-action">
+                        <a href="#section-call-to-action" class="scroll-to"></a>
+                        <span>JOIN THE CRYPTO REVOLUTION TODAY</span>
+                    </li>
+                </ul>
+            </div>
+            <section class="body">
+                <!-- START: Top Section -->
+                <div class="section-item section-hero" id="section-hero">
+                    <div class="bg-line"></div>
+                    <div class="container-fluid">
+                        <div class="hero-wrapper">
+                            <div class="hero-frame">
+                                <div class="hero-slider d-flex">
+                                    <div class="hero-item">
+                                        <h2>KICKSTARTING TOKEN ECONOMIES</h2>
+                                        <p class="top-description">Monico is the easiest and most complete platform to set up and participate in Initial Coin Offerings.
+                                            Use your mobile device to create, invest, and trade tokens generated from ICOs around the world.</p>
+                                    </div>
+                                    <div class="hero-item">
+                                        <h2>DISCOVER PROJECTS</h2>
+                                        <p class="top-description">Use the Project Directory to view all tokens and ICOs in the Monico ecosystem.
+                                            Find new opportunities to support at a glance.</p>
+                                    </div>
+                                    <div class="hero-item">
+                                        <h2>PERFORM DUE DILIGENCE</h2>
+                                        <p class="top-description">Make informed decisions about participation in an ICO via the information and documents available in each
+                                            company's Project Description. Some companies may also have audit reports from Monico partners, ensuring stringent assessment of the company's profile.</p>
+                                    </div>
+                                    <div class="hero-item">
+                                        <h2>BUY TOKEN</h2>
+                                        <p class="top-description">Once you've decided to participate in a project, use your own crypto wallet or other payment partners to
+                                            purchase tokens from a company or another person. For additional security, Monico never stores your private keys, and all transactions are decentralized.</p>
+                                    </div>
+                                    <div class="hero-item font-less">
+                                        <h2>ON-DEVICE WALLET CREATION AND STORAGE</h2>
+                                        <p class="top-description">Wallets are created on your device for tokens that you purchase. Import and export wallets on the app, and
+                                            trade securely through the arbitrated peer-to-peer trading system.</p>
+                                    </div>
+                                </div>
+                                <div class="hero-slider-btn">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item active"><a href="#"></a></li>
+                                        <li class="list-inline-item"><a href="#"></a></li>
+                                        <li class="list-inline-item"><a href="#"></a></li>
+                                        <li class="list-inline-item"><a href="#"></a></li>
+                                        <li class="list-inline-item"><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hero-app clearfix">
+                                <div class="app-wrapper float-right">
+                                    <div class="available-text">AVAILABLE SOON ON:</div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a alt="Google Play" href="#"  id="modal-platform" data-platform="Google Play" data-toggle="modal"
+                                            data-type="" data-target="#modalPlatform">
+                                                <img src="images/google-play.png" />
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a alt="App Store" href="#" id="modal-platform" data-platform="Apple Store" data-toggle="modal" data-type="" data-target="#modalPlatform">
+                                                <img src="images/app-store.png" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone-wrapper">
+                            <div class="banner-wrapper">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item banner-slider" data-index="4">
+                                        <img src="images/banner-slide-4.png?v=3" />
+                                    </li>
+                                    <li class="list-inline-item banner-slider" data-index="5">
+                                        <img src="images/banner-slide-5.png?v=3" />
+                                    </li>
+                                    <li class="list-inline-item banner-slider" data-index="1">
+                                        <img src="images/banner-slide-1.png?v=3" />
+                                    </li>
+                                    <li class="list-inline-item banner-slider" data-index="2">
+                                        <img src="images/banner-slide-2.png?v=3" />
+                                    </li>
+                                    <li class="list-inline-item banner-slider" data-index="3">
+                                        <img src="images/banner-slide-3.png?v=3" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="banner-frame">
+                                <img src="images/iphone-x.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Top Section -->
+                <!-- START: Pain Points and Challenges -->
+                <div class="section-item section-pain-points" id="section-pain-points">
+                    <h2 class="text-center aos-init aos-animate"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">
+                        PAIN POINTS AND CHALLENGES
+                    </h2>
+                    <div class="container pain-points-list">
+                        <div class="d-flex pain-points-scams" >
+                            <div class="content-logo text-center aos-init aos-animate"
+                                data-aos="fade-left"
+                                data-aos-offset="500"
+                                data-aos-duration="500">
+                                <img src="images/pain-point-scams.svg" />
+                            </div>
+                            <div class="content-detail aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom">
+                                <span>Some ICOs are</span>
+                                <h3>SCAMS</h3>
+                                <p>Nowadays, it is difficult to distinguish between ICO projects that are legitimate from
+                                    those that are fake. Considering the large number of token sales emerging, there is
+                                    no single venue for ICO participants to fully verify the legitimacy of an entity.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex pain-points-centralized">
+                            <div class="content-detail text-right aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom">
+                                <span>Web Exchanges are</span>
+                                <h3>CENTRALIZED</h3>
+                                <p>Exchanges are compromised on a regular basis due to the need for a central wallet to maintain
+                                    liquidity between coins and tokens. Investors have to wait for tokens to be listed on
+                                    exchanges before being able to participate in the secondary market, whereas companies
+                                    have to pay large fees to a handful of exchanges in order to get their token listed.</p>
+                            </div>
+                            <div class="content-logo text-center aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-offset="500"
+                                data-aos-duration="500">
+                                <img src="images/pain-point-centralized.svg" />
+                            </div>
+                        </div>
+                        <div class="d-flex pain-points-complex">
+                            <div class="content-logo text-center aos-init aos-animate"
+                                data-aos="fade-left"
+                                data-aos-offset="500"
+                                data-aos-duration="500">
+                                <img src="images/pain-point-complex.svg" />
+                            </div>
+                            <div class="content-detail aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom">
+                                <span>ICO Participation is</span>
+                                <h3>COMPLEX</h3>
+                                <span>for beginners</span>
+                                <p>The process of purchasing cryptocurrency, scanning for relevant projects, purchasing tokens, managing
+                                    portfolios, and trading on secondary markets relies on many different pieces of software. For people
+                                    wanting to participate in the new cryptocurrency economy, navigating this fragmentation of solutions
+                                    can be a daunting task.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Pain Points and Challenges -->
+                <!-- START: Token Market Sales -->
+                <div class="section-item section-token-market-sales" id="section-token-market-sales">
+                    <h2 class="text-center aos-init aos-animate" id="token-market-sales"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">
+                        TOKEN MARKET SALES
+                    </h2>
+                    <div class="container">
+                        <img src="images/map.svg"
+                            id="token-market-map"
+                            class="img-map aos-init aos-animate"
+                            data-aos="zoom-in">
+                        <div class="map-marker-list">
+                            <div class="map-marker-item marker-usa aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="200"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="USA"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        USA
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">583.8m USD</strong><br/>
+                                        <span class="projects">59 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-cayman aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="400"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="Cayman"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        Cayman Islands
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">96.5m USD</strong><br/>
+                                        <span class="projects">9 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-bottom marker-bvi aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="600"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="BVI"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        BVI
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">158.5m USD</strong><br/>
+                                        <span class="projects">5 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-uk aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="800"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="UK"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        UK
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">99.7m USD</strong><br/>
+                                        <span class="projects">26 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-gibraltar aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="1000"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="Gibraltar"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        Gibraltar
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">133.7m USD</strong><br/>
+                                        <span class="projects">6 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-estonia aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="1200"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="Estonia"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        Estonia
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">122.6m USD</strong><br/>
+                                        <span class="projects">16 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-switzerland aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="1400"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="Switzerland"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        Switzerland
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">268.2m USD</strong><br/>
+                                        <span class="projects">14 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-bottom marker-singapore aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="1600"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="Singapore"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        Singapore
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">468.1m USD</strong><br/>
+                                        <span class="projects">34 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-china aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="1800"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="China"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        China
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">202.1m USD</strong><br/>
+                                        <span class="projects">9 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-hongkong aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="2000"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="Hongkong"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        Hongkong
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">82.1m USD</strong><br/>
+                                        <span class="projects">13 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-marker-item marker-australia aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="2200"
+                                data-aos-offset="0">
+                                <a href="javascript:void(0)" alt="Australia"></a>
+                                <div class="map-wrapper text-center">
+                                    <div class="map-title">
+                                        Australia
+                                    </div>
+                                    <div class="map-info">
+                                        <strong class="amount">30m USD</strong><br/>
+                                        <span class="projects">6 projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="token-market-circle d-flex justify-content-center align-items-center aos-init aos-animate"
+                            data-aos="fade-up">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column circle-item align-items-center justify-content-center">
+                                    <div>450B</div>
+                                    <span>USD</span>
+                                </div>
+                                <div class="circle-label text-center">
+                                    Crypto Market Cap
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column circle-item align-items-center justify-content-center">
+                                    <div>155B</div>
+                                    <span>USD</span>
+                                </div>
+                                <div class="circle-label text-center">
+                                    The ICO Market
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column circle-item align-items-center justify-content-center">
+                                    <div>600m</div>
+                                    <span>USD</span>
+                                </div>
+                                <div class="circle-label text-center">
+                                    ICO Marketing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container aos-init aos-animate"
+                        data-aos="fade-up">
+                        <p class="calculation-text text-center">Calculations based on the average 500k USD budget<br/>needed for marketing plus a 2% success fee.
+                            <br/>- Data summarized with Smith+Crown and ICO Rating</p>
+                    </div>
+                </div>
+                <!-- END: Token Market Sales -->
+                <!-- START: Opportunity to Seize -->
+                <div class="section-item section-opportunity-to-seize" id="section-opportunity-to-seize">
+                    <div class="container">
+                        <h2 class="text-center aos-init aos-animate"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">AN OPPORTUNITY TO SEIZE</h2>
+                        <p class="section-description text-center aos-init aos-animate"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">By the end of 2018, it is estimated that the ICO industry will be valued at around 15B dollars.
+                            Solutions that capitalize on this opportunity will have the potential to both stimulate further growth and reap
+                            the benefits of this market.</p>
+                        <div class="text-center solution-text aos-init aos-animate"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">The Solution?</div>
+                        <div class="ico-logo aos-init aos-animate"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
+                            <img src="images/monico-logo-blue.svg" />
+                        </div>
+                        <div class="content-list benefits-investors d-flex aos-init aos-animate"
+                            data-aos="fade-up-right">
+                            <div class="content-item">
+                                <span>BENEFITS FOR</span>
+                                <h3>INVESTORS</h3>
+                            </div>
+                            <div class="content-item">
+                                <h4>Easily Buy & Sell Tokens</h4>
+                                <p>Trade tokens offered by companies and other individuals through the mobile app. Manage token portfolios in a single interface.</p>
+                            </div>
+                            <div class="content-item">
+                                <h4>Decentralized Trading</h4>
+                                <p>Wallet information is never stored on the Monico server. Zero reliance on central exchange wallets.
+                                    Transactions are facilitated by smart contracts.</p>
+                            </div>
+                            <div class="content-item">
+                                <h4>Multiple Supported Cryptocurrencies</h4>
+                                <p>Payments with Bitcoin, Litecoin, Ether, Stellar XLM, Monero, NEO, NEM, and Ripple XRP are supported. Integration
+                                    with third-party payment gateways bring built.</p>
+                            </div>
+                        </div>
+                        <div class="content-list benefits-investors d-flex aos-init aos-animate"
+                            data-aos="fade-up-left">
+                            <div class="content-item">
+                                <span>BENEFITS FOR</span>
+                                <h3>COMPANIES</h3>
+                            </div>
+                            <div class="content-item">
+                                <h4>Blockchain Interoperability</h4>
+                                <p>The Monico platform supports token sales on Ethereum, Stellar, NEO, NEM, and Hyperledger. The community guides the Monico
+                                    team on future token support</p>
+                            </div>
+                            <div class="content-item">
+                                <h4>Crowdsale Features Included</h4>
+                                <p>KYC, 2FA, discounts, referrals, bounties, and API features are available for companies starting their own token
+                                    sales, in addition to standard administrative and sale management interfaces.</p>
+                            </div>
+                            <div class="content-item">
+                                <h4>Complete KYC Interface</h4>
+                                <p>Both investors and companies can prove their legitimacy through a complete suite of Know-Your-Customer and
+                                    external auditing capabilities on the platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Opportunity to Seize -->
+                <!-- START: Cold Wallet -->
+                <div class="section-item section-cold-wallet" id="section-cold-wallet">
+                    <div class="container">
+                        <div class="d-flex section-description justify-content-center">
+                            <div class="cold-wallet-text text-right aos-init aos-animate"
+                                data-aos="zoom-in">
+                                <span>MONICO AS A</span>
+                                <h2>COLD WALLET</h2>
+                            </div>
+                            <div class="cold-wallet-info aos-init aos-animate"
+                                data-aos="fade-down-right">
+                                <p>As a platform, users can search through vetted projects, buy and exchange tokens all on the app. Users
+                                    store their financial information offline, only signing transactions as required. Otherwise, the
+                                    Monico app acts as a cold wallet where users can secure their funds.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex cold-wallet-list justify-content-center">
+                            <div class="cold-wallet-item cold-wallet-servers aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="text-center">
+                                    <img src="images/coldwallet-servers.svg?v=1" />
+                                </div>
+                                <h3 class="text-center">Wallets are stored on phones, not on servers</h3>
+                            </div>
+                            <div class="cold-wallet-item cold-wallet-keys aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="text-center">
+                                    <img src="images/coldwallet-keys.svg?v=1" />
+                                </div>
+                                <h3 class="text-center">All Wallets are Safe</h3>
+                            </div>
+                            <div class="cold-wallet-item cold-wallet-transactions aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="text-center">
+                                    <img src="images/coldwallet-transactions.svg" />
+                                </div>
+                                <h3 class="text-center">All Transactions are Safe</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Cold Wallet -->
+                <!-- START: Community -->
+                <div class="section-item section-community" id="section-community">
+                    <div class="container">
+                        <div class="community-detail text-center aos-init aos-animate"
+                            data-aos="fade-up">
+                            <span>MONICO AS A</span>
+                            <h2>COMMUNITY</h2>
+                            <p>As an community, Monico allows companies to connect to auditors, promoters, and
+                                consumers and pay for their services through the unified MNC utility token.</p>
+                        </div>
+                        <div class="community-diagram-wrapper">
+                            <div class="community-diagram aos-init aos-animate"
+                                data-aos="zoom-in">
+                                <img src="images/monico-community.svg?v=1" />
+                            </div>
+                            <div class="community-position position-auditor aos-init aos-animate"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="200"
+                                data-aos-offset="0">AUDITOR</div>
+                            <div class="community-position position-promoter aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="400"
+                                data-aos-offset="0">PROMOTER</div>
+                            <div class="community-position position-project-owner text-right aos-init aos-animate"
+                                data-aos="fade-left"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="600"
+                                data-aos-offset="0">PROJECT<br/>OWNER</div>
+                            <div class="community-position position-consumer aos-init aos-animate"
+                                data-aos="fade-right"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="800"
+                                data-aos-offset="0">CONSUMER</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Community -->
+                <!-- START: Ecosystem -->
+                <div class="section-item section-ecosystem" id="section-ecosystem">
+                    <div class="container">
+                        <img src="images/ecosystem.svg" class="aos-init aos-animate"
+                            data-aos="flip-up"/>
+                        <div class="ecosystem-detail aos-init aos-animate"
+                            data-aos="fade-up">
+                            <span>MONICO AS AN</span>
+                            <h2>ECOSYSTEM</h2>
+                            <p>Monicoin (MNC) a utility token, will be circulated throughout the ecosystem of auditors,
+                                promoters and consumers for their contributions on successful token listings and the overall
+                                Monico community. It is by design that the value of the platform will grow relatively to the value of MNC.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Ecosystem -->
+                <!-- START: Download Whitepaper -->
+                <div class="section-item section-whitepaper hidden" id="section-whitepaper">
+                    <div class="container">
+                        <div class="section-description text-center aos-init aos-animate"
+                            data-aos="fade-up">
+                            <p>
+                                Nullam vitae maximus nulla, id iaculis neque. Pellentesque habitant morbi tristique
+                                senectus et netus et malesuada fames ac turpis egestas. Phasellus nisl ex, mattis ac
+                                turpis eu, tempor placerat nulla. Sed porttitor, velit eget accumsan sodales, mauris
+                                urna egestas est, eu tempus ex urna quis lacus. Fusce tincidunt sem in dui tincidunt bibendum.
+                            </p>
+                            <div class="btn-group" role="group">
+                                <a id="btn-whitepaper" href="#" class="btn btn-success btn-whitepaper btn-lg dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Download Whitepaper
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="btn-whitepaper">
+                                    <a class="dropdown-item" href="#">English</a>
+                                    <a class="dropdown-item" href="#">Thailand</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="download-list">
+                            <div class="download-item d-flex justify-content-center aos-init aos-animate"
+                                data-aos="fade-up">
+                                <div class="btn-download">
+                                    <a class="btn btn-outline-success btn-lg"
+                                    href="#" title="Whitepaper">CTA Button 2</a>
+                                </div>
+                                <div class="btn-download">
+                                    <a class="btn btn-outline-success btn-lg"
+                                    href="#" title="Whitepaper">CTA Button 3</a>
+                                </div>
+                            </div>
+                            <div class="download-item d-flex justify-content-center aos-init aos-animate"
+                                data-aos="fade-up">
+                                <div class="btn-download">
+                                    <a class="btn btn-outline-success btn-lg"
+                                    href="#" title="Whitepaper">CTA Button 2</a>
+                                </div>
+                                <div class="btn-download">
+                                    <a class="btn btn-outline-success btn-lg"
+                                    href="#" title="Whitepaper">CTA Button 3</a>
+                                </div>
+                            </div>
+                            <div class="download-item d-flex justify-content-center aos-init aos-animate"
+                                data-aos="fade-up">
+                                <div class="btn-download">
+                                    <a class="btn btn-outline-success btn-lg"
+                                    href="#" title="Whitepaper">CTA Button 2</a>
+                                </div>
+                                <div class="btn-download">
+                                    <a class="btn btn-outline-success btn-lg"
+                                    href="#" title="Whitepaper">CTA Button 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Download Whitepaper -->
+                <!-- START: Token Info -->
+                <div class="section-item section-token-info hidden hidden" id="section-token-info">
+                    <h2 class="text-center aos-init aos-animate"
+                        data-aos="fade-up">Token Info</h2>
+                    <div class="container">
+                        <div class="d-flex token-hex justify-content-center aos-init aos-animate"
+                            data-aos="flip-left">
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">Monicoin<br/><span>Token name</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">MNC<br/><span>Token name</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">Ethereum ERC20<br/><span>Token Type</span></h3>
+                            </div>
+                        </div>
+                        <div class="d-flex token-hex-muted justify-content-center aos-init aos-animate"
+                            data-aos="flip-left">
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">10,000,000<br/><span>Total Tokens Authorized</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">5,000,000<br/><span>Total Allocated for Sale</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">100,000<br/><span>Rounds</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">100 MNC = 1ETH<br/><span>Price During Sale</span></h3>
+                            </div>
+                        </div>
+                        <div class="d-flex token-plain justify-content-center aos-init aos-animate"
+                            data-aos="flip-left">
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">ETH<br/><span>Accepted Payments</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">5% of MNC<br/>purchased by referred<br/><span>Total Allocated for Sale</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">Private Round +<br/>4 Public Rounds<br/><span>Soft Cap</span></h3>
+                            </div>
+                            <div class="token-item text-center d-flex justify-content-center">
+                                <h3 class="align-self-center">September 2018<br/><span>Price During Sale</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Token Info -->
+                <!-- START: Token Distribution -->
+                <div class="section-item section-token-distribution hidden" id="section-token-distribution">
+                    <h2 class="text-center aos-init aos-animate"
+                        data-aos="fade-up">TOKEN DISTRIBUTION</h2>
+                    <div class="container aos-init aos-animate"
+                        data-aos="zoom-in">
+                        <div id="container" style="min-width: 310px; height: 600px; max-width: 800px; margin: 0 auto"></div>
+                    </div>
+                </div>
+                <!-- END: Token Graph -->
+                <!-- START: Roadmap -->
+                <div class="section-item section-roadmap" id="section-roadmap">
+                    <div class="container">
+                        <div class="section-title aos-init aos-animate"
+                            data-aos="fade-up">
+                            <h2 class="text-center">Roadmap</h2>
+                        </div>
+                        <div class="roadmap-list-wrapper aos-init aos-animate"
+                            data-aos="fade-up">
+                            <div class="roadmap-list d-flex">
+                                <div class="roadmap-item">
+                                    <h3 class="text-center"><time datetime="2018-04">APRIL 2018</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>Conceptual MVP Launch</h4>
+                                        <p>ico.openovate.com</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap-item">
+                                    <h3 class="text-center"><time datetime="2018-05">MAY 2018</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>Planning</h4>
+                                        <p>Feedback, Technical Design, Financial Planning, Marketing Approaches and Documentation</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap-item active">
+                                    <h3 class="text-center"><time datetime="2018-07">JULY 2018</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>Development Starts</h4>
+                                        <p>Mobile, Web and ServerOPs</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap-item inactive">
+                                    <h3 class="text-center"><time datetime="2018-09">SEPTEMBER 2018</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>Token Sale Begins</h4>
+                                        <p>Alpha release available for Android which includes wallets, project listings, and purchasing tokens</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roadmap-list d-flex flex-row-reverse">
+                                <div class="roadmap-item inactive">
+                                    <h3 class="text-center"><time datetime="2018-11">NOVEMBER 2018</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>iOS Release</h4>
+                                        <p>Beta Release in both iOS and Android. App Store and Play Store Accepted. Featuring selling tokens, KYC and vetted projects.</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap-item inactive">
+                                    <h3 class="text-center"><time datetime="2018-12">DECEMBER 2018</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>Partnership and Integrations</h4>
+                                        <p>In various listing websites, crpto-wallet mobile apps, social and blogging networks, and other referral websites. Slight market push.</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap-item inactive">
+                                    <h3 class="text-center"><time datetime="2019-02">FEBRUARY 2019</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>First Major Release</h4>
+                                        <p>In both iOS and Android. Projects can now using the web to sign up, list their projects and use services. API access will be available.</p>
+                                    </div>
+                                </div>
+                                <div class="roadmap-item inactive">
+                                    <h3 class="text-center"><time datetime="2019-04">APRIL 2019</time></h3>
+                                    <div class="roadmap-detail">
+                                        <h4>SEA Regulations</h4>
+                                        <p>Expanding projects around Southeast Asia by complying with government associations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Roadmap -->
+                <!-- START: News -->
+                <div class="section-item section-news hidden" id="section-news">
+                    <div class="container">
+                        <div class="d-flex align-items-center aos-init aos-animate"
+                            data-aos="fade-up">
+                            <div class="news-detail">
+                                <h2>News</h2>
+                                <p>Nullam vitae maximus nulla, id iaculis neque. Pellentesque habitant morbi tristique senectus
+                                    et netus et malesuada fames ac turpis egestas. Phasellus nisl ex, mattis ac turpis eu, tempor
+                                    placerat nulla. Sed porttitor, velit eget accumsan sodales, mauris urna egestas est, eu tempus
+                                    ex urna quis lacus. Fusce tincidunt sem in dui tincidunt bibendum.</p>
+                            </div>
+                            <div class="news-wrapper aos-init aos-animate"
+                                data-aos="fade-right">
+                                <div class="news-frame">
+                                    <div class="news-list">
+                                        <div class="news-item">
+                                            <div class="news-image">
+                                            </div>
+                                            <div class="news-info">
+                                                <div class="news-date">
+                                                    <time datetime="2018-07-19 00:00">July 19, 2018</time>
+                                                </div>
+                                                <a href="#" class="news-title" title="">Monico - The Future of Token Exchange</a>
+                                                <a href="#" class="read-text">Read</a>
+                                            </div>
+                                        </div>
+                                        <div class="news-item">
+                                            <div class="news-image">
+                                            </div>
+                                            <div class="news-info">
+                                                <div class="news-date">
+                                                    <time datetime="2018-07-20 00:00">July 20, 2018</time>
+                                                </div>
+                                                <a href="#" class="news-title" title="">Monico - The Future of Token Exchange</a>
+                                                <a href="#" class="read-text">Read</a>
+                                            </div>
+                                        </div>
+                                        <div class="news-item">
+                                            <div class="news-image">
+                                            </div>
+                                            <div class="news-info">
+                                                <div class="news-date">
+                                                    <time datetime="2018-07-21 00:00">July 21, 2018</time>
+                                                </div>
+                                                <a href="#" class="news-title" title="">Monico - The Future of Token Exchange</a>
+                                                <a href="#" class="read-text">Read</a>
+                                            </div>
+                                        </div>
+                                        <div class="news-item">
+                                            <div class="news-image">
+                                            </div>
+                                            <div class="news-info">
+                                                <div class="news-date">
+                                                    <time datetime="2018-07-22 00:00">July 22, 2018</time>
+                                                </div>
+                                                <a href="#" class="news-title" title="">Monico - The Future of Token Exchange</a>
+                                                <a href="#" class="read-text">Read</a>
+                                            </div>
+                                        </div>
+                                        <div class="news-item">
+                                            <div class="news-image">
+                                            </div>
+                                            <div class="news-info">
+                                                <div class="news-date">
+                                                    <time datetime="2018-07-23 00:00">July 23, 2018</time>
+                                                </div>
+                                                <a href="#" class="news-title" title="">Monico - The Future of Token Exchange</a>
+                                                <a href="#" class="read-text">Read</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-btn">
+                                    <a href="#" id="prev-btn" class="prev-btn"><span class="fas fa-chevron-left"></span></a>
+                                    <a href="#" id="next-btn" class="next-btn"><span class="fas fa-chevron-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: News -->
+                <!-- START: Partnership -->
+                <div class="section-item section-partnership hidden" id="section-partnership">
+                    <h2 class="text-center aos-init aos-animate"
+                        data-aos="fade-up">Partnership</h2>
+                    <div class="container aos-init aos-animate"
+                        data-aos="flip-left">
+                        <div class="d-flex partnership-list justify-content-center align-items-center">
+                            <div class="partnership-item">
+                                <img src="images/partnership-coins.svg" alt="Coins" />
+                            </div>
+                            <div class="partnership-item">
+                                <img src="images/partnership-abra.svg" alt="Abra" />
+                            </div>
+                            <div class="partnership-item">
+                                <img src="images/partnership-coinfirm.svg" alt="Coinfirm" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Partnership -->
+                <!-- START: Our Team / Advisors -->
+                <div class="section-item section-our-team-advisors hidden" id="section-our-team-advisors">
+                    <h2 class="text-center aos-init aos-animate"
+                        data-aos="fade-up">Our Team</h2>
+                    <div class="container">
+                        <div class="people-list d-flex justify-content-center">
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                        </div>
+                        <div class="people-list d-flex justify-content-center">
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                        </div>
+                        <div class="people-list d-flex justify-content-center">
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-center our-advisor aos-init aos-animate"
+                        data-aos="fade-up">Our Advisors</h2>
+                    <div class="container">
+                        <div class="people-list d-flex justify-content-center">
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                        </div>
+                        <div class="people-list d-flex justify-content-center">
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon"></div>
+                                <h3>Artie Lopez</h3>
+                                <div class="position text-muted">CEO</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- START: Call to Action -->
+                <div class="section-item section-call-to-action" id="section-call-to-action">
+                    <div class="container">
+                        <h2 class="text-center">Join the Crypto Revolution Today</h2>
+                        <p class="text-center">Download the Monico app today, and join the millions of others that have already embraced the blockchain revolution.</p>
+                        <div class="d-flex section-content">
+                            <div class="call-to-action-logo aos-init aos-animate"
+                                data-aos="zoom-in-right"
+                                data-aos-delay="500">
+                                <img src="images/onepager-last-iphone.png" alt="Call to Action"/>
+                            </div>
+                            <div class="call-to-action-detail aos-init aos-animate"
+                                data-aos="fade-up">
+                                <div class="form-content aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                    <h4>Launch Your ICO Today</h4>
+                                    <p>Make your ICO idea a reality. Create, manage, and monitor your token sale in a single platform.
+                                        Our team is standing by to answer your questions, concerns, and inquiries about getting listed on Monico.</p>
+                                    <br/>
+                                    <h4>How can we help you today?</h4>
+                                    <br/>
+                                    <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSf4TVc7pYLNxhH7lH8xCqa_j8INwRIQDFKLlO_snlHIzTVUug/formResponse"
+                                        target="_self" method="GET" id="mG61Hd" name="form-inquiry">
+                                        <div class="form-group">
+                                            <select class="form-control" id="select-question">
+                                                <option value="I'd like to get a quotation">I'd like to get a quotation</option>
+                                                <option value="I'd like to see a demo">I'd like to see a demo</option>
+                                                <option value="I have another concern">I have another concern</option>
+                                            </select>
+                                            <input id="inputQuestion" type="text" class="quantumWizTextinputPaperinputInput exportInput hidden" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Question"
+                                            aria-describedby="i.desc.1753512946 i.err.1753512946" name="entry.431157380" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <input id="inputFirst" type="text" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off" tabindex="0"
+                                                aria-label="First Name" aria-describedby="i.desc.1712211097 i.err.1712211097" name="entry.1107158897" value="" dir="auto"
+                                                data-initial-dir="auto" data-initial-value="" placeholder="First Name">
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input id="inputLast" type="text" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off" tabindex="0"
+                                                aria-label="Last Name" aria-describedby="i.desc.601397405 i.err.601397405" name="entry.332778907" value="" dir="auto"
+                                                data-initial-dir="auto" data-initial-value="" placeholder="Last Name">
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="inputCompany" type="text" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off" tabindex="0"
+                                            aria-label="Company" aria-describedby="i.desc.869149425 i.err.869149425" name="entry.825964777" value="" dir="auto"
+                                            data-initial-dir="auto" data-initial-value="" placeholder="Company">
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="inputEmail" type="text" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1216211776 i.err.1216211776" name="entry.902976351" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Email">
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                        <button type="button" id="btn-form-submit" class="btn btn-primary">Submit Form</button>
+                                    </form>
+                                </div>
+                                <div class="available-soon">
+                                    <div>Available soon on:</div>
+                                    <a href="#" id="modal-platform" data-platform="Google Play" data-toggle="modal" data-type="" data-target="#modalPlatform">
+                                        <img src="images/google-play.png" alt="Google Play" />
+                                    </a>
+                                    <a href="#" id="modal-platform" data-platform="Apple Store" data-toggle="modal" data-type="" data-target="#modalPlatform">
+                                        <img src="images/app-store.png" alt="Apple Store" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Call to Action -->
+                <footer class="text-center">
+                    <h1 class="monico-logo">
+                        <img src="images/monico-logo-white.svg" alt="Monico" />
+                    </h1>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#section-hero" class="scroll-to" title="Home">Home</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#section-pain-points" class="scroll-to" title="Pain Points and Challenges">Pain Points and Challenges</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#section-token-market-sales" class="scroll-to" title="Token Market Sales">Token Market Sales</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#section-opportunity-to-seize" class="scroll-to" title="The Solution">The Solution</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#section-cold-wallet" class="scroll-to" title="As A Cold Wallet">As a Cold Wallet</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#section-community" class="scroll-to" title="As a Community">As a Community</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#section-ecosystem" class="scroll-to" title="As an Ecosystem">As an Ecosystem</a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline hidden">
+                        <li class="list-inline-item">
+                            <a href="#" title="Token Info">Token Info</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Token Distribution">Token Distribution</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Road Map">Road Map</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="News">News</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Partnership">Partnership</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Our Team">Our Team</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Our Advisors">Our Advisors</a>
+                        </li>
+                    </ul>
+                    <small>&copy; Copyright Monico 2018</small>
+                </footer>
+            </section>
+        </div>
+        <!-- SCRIPTS -->
+        <script src="scripts/custom.js" type="text/javascript"></script>
+    </body>
+    <div class="modal fade modal-platform" id="modalPlatform" tabindex="-1" role="dialog" aria-labelledby="modalPlatformLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPlatformLabel">Sign-up BETA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form name="form-signup" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfTj60wncu3s5P2Lk7NeKM9eGndKB7HfvEzohX95huU2lvGUA/formResponse"
+                target="_self" method="GET" id="mG61Hd">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Platform</label>
+                            <input type="text" id="modalPlatform" disabled="disabled" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Platform" aria-describedby="i.desc.1060517969 i.err.1060517969" name="entry.2040635229" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                            <input type="text" id="modalPlatform" class="quantumWizTextinputPaperinputInput exportInput hidden" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Platform" aria-describedby="i.desc.1060517969 i.err.1060517969" name="entry.2040635229" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" id="modalFirstName" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
+                            tabindex="0" aria-label="First Name" aria-describedby="i.desc.650698510 i.err.650698510" name="entry.2056521268" value="" dir="auto"
+                            data-initial-dir="auto" data-initial-value="">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" id="modalLastName" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
+                            tabindex="0" aria-label="Last Name" aria-describedby="i.desc.550617508 i.err.550617508" name="entry.271440415" value="" dir="auto"
+                            data-initial-dir="auto" data-initial-value="">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" id="modalEmail" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
+                            tabindex="0" aria-label="Email" aria-describedby="i.desc.370817563 i.err.370817563" name="entry.1563939636" value="" dir="auto"
+                            data-initial-dir="auto" data-initial-value="">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-modal-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</html>

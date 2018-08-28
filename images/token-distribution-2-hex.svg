@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.64 422.649">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #83c534;
+      }
+
+      .cls-2 {
+        opacity: 0.196;
+      }
+
+      .cls-3 {
+        fill: #85c231;
+      }
+    </style>
+  </defs>
+  <g id="Group_1081" data-name="Group 1081" transform="translate(5827.845 -8694.921)">
+    <g id="Group_1079" data-name="Group 1079" transform="translate(-5827.345 9012.685)">
+      <g id="Group_971" data-name="Group 971" transform="translate(0 -163.921)">
+        <path id="Path_6951" data-name="Path 6951" class="cls-1" d="M47.345,0-74.4,67.057V201.176l121.742,67.06,121.743-67.06V67.057Z" transform="translate(74.397)"/>
+      </g>
+    </g>
+    <g id="Group_1080" data-name="Group 1080" class="cls-2" transform="translate(-5706 8858.843)">
+      <g id="Group_973" data-name="Group 973" transform="translate(74.397 -163.921)">
+        <path id="Path_6952" data-name="Path 6952" class="cls-3" d="M0,0-74.4,40.979V122.94L0,163.921,74.4,122.94V40.979Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

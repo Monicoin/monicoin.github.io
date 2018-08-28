@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.125 39.513">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #86c232;
+      }
+    </style>
+  </defs>
+  <g id="Group_1033" data-name="Group 1033" transform="translate(0 338.193)">
+    <g id="Group_1029" data-name="Group 1029" transform="translate(0 -321.836)">
+      <path id="Path_6956" data-name="Path 6956" class="cls-1" d="M-.209-43.579-.237-32,9.776-26.188l10.041-5.765.028-11.578L9.831-49.344Zm1.577.307L9.828-48.13l8.438,4.9L9.8-38.373ZM.816-32.606l.023-9.756,8.438,4.9-.023,9.757Zm9.513-4.856,8.461-4.858-.023,9.756L10.305-27.7Z" transform="translate(0.237 49.344)"/>
+    </g>
+    <g id="Group_1030" data-name="Group 1030" transform="translate(19.071 -321.836)">
+      <path id="Path_6957" data-name="Path 6957" class="cls-1" d="M0-43.76v11.578l10.027,5.789,10.027-5.789V-43.76L10.027-49.549Zm1.577.3,8.449-4.878,8.45,4.878-8.45,4.878Zm8.975,5.789L19-42.546v9.757l-8.45,4.878Zm-9.5,4.878v-9.757L9.5-37.667v9.756Z" transform="translate(0 49.549)"/>
+    </g>
+    <g id="Group_1031" data-name="Group 1031" transform="translate(9.569 -338.193)">
+      <path id="Path_6958" data-name="Path 6958" class="cls-1" d="M-75.792,0-85.819,5.789V14.83l1.052.621V7l8.449,4.878V20.44l.526.31.526-.31V11.881L-66.817,7v8.448l1.052-.621V5.789Zm-8.449,6.092,8.449-4.878,8.45,4.878-8.45,4.878Z" transform="translate(85.819)"/>
+    </g>
+  </g>
+</svg>

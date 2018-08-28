@@ -1,0 +1,32 @@
+/* Global - Classes
+------------------------------*/
+html,
+body {
+    background-color: #FAFAFA;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #E3F0FF;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+/* BODY */
+.airdrop-form {
+    background: #FFFFFF;
+    margin-top: 50px;
+    padding: 20px 50px;
+    -webkit-box-shadow: 0 4px 45px rgba(0,0,0,.25), 0 4px 18px rgba(0,0,0,.22);
+            box-shadow: 0 4px 45px rgba(0,0,0,.25), 0 4px 18px rgba(0,0,0,.22);
+    width: 70%;
+}
