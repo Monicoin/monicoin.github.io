@@ -134,6 +134,7 @@ header .navbar-dark {
 
 .side-navigation ul .side-menu.active a {
     background: #007AFF;
+    border: 1px solid #FFFFFF;
     left: -2px;
     margin-top: 9px;
     min-height: 15px;
@@ -159,6 +160,7 @@ header .navbar-dark {
 
 .side-navigation ul .side-menu.active span {
     background: #007AFF;
+    border: 1px solid #FFFFFF;
     border-radius: 40px;
     color: #FFFFFF !important;
     display: inline-block;
@@ -861,6 +863,7 @@ footer ul li a:hover {
 }
 
 .section-whitepaper h2 {
+    font: 'Oswald', sans-serif;
     margin-bottom: 50px;
 }
 
