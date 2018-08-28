@@ -863,8 +863,23 @@ footer ul li a:hover {
 }
 
 .section-whitepaper h2 {
-    font: 'Oswald', sans-serif;
-    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-whitepaper .btn-whitepaper {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    color: #007bff;
+    margin-top: 50px;
+    width: 370px;
+}
+
+.section-whitepaper .btn-whitepaper:hover {
+    background: #E2E2E2;
 }
 
 .section-whitepaper .section-description {
