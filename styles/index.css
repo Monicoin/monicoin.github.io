@@ -212,6 +212,14 @@ footer ul li a:hover {
     color: #FFFFFF;
 }
 
+footer ul.list-social {
+    font-size: 25px;
+}
+
+footer ul.list-social li:not(:last-child)::after {
+    content: "";
+}
+
 /* PAIN POINTS AND CHALLENGES
 ------------------------------------------ */
 .section-pain-points {
@@ -1453,10 +1461,6 @@ footer ul li a:hover {
 
 .section-cold-wallet .justify-content-center > div:not(:last-child) {
     margin-right: 20px;
-}
-
-.section-cold-wallet .cold-wallet-list .cold-wallet-item:not(:first-child) {
-    margin-top: 20px;
 }
 
 .section-cold-wallet .cold-wallet-list .cold-wallet-keys img {
