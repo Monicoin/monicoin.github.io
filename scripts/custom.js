@@ -376,10 +376,10 @@ function formInquiry() {
 
     $('a#modal-platform').click(function(e) {
         e.preventDefault();
-        
+
         var platform = $(this).attr('data-platform');
 
-        $('input#modalPlatform').val(platform);
+        $('input#modalPlatformInput').val(platform);
     });
 
     $('.btn-modal-submit').click(function() {

@@ -13,7 +13,6 @@ body {
 }
 
 body {
-    background: #E3F0FF;
     overflow-x: hidden;
 }
 
@@ -21,12 +20,246 @@ body {
     display: none;
 }
 
-/* BODY */
-.airdrop-form {
-    background: #FFFFFF;
+/* HEAD
+------------------------------------------ */
+header .navbar {
+    background: #007AFF;
+}
+
+/* BODY
+------------------------------------------ */
+.main-wrapper {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.main-wrapper .give-away {
+    background: url(../images/airdrop-bg.svg) no-repeat;
+    margin: 20px auto;
+    padding: 116px 0;
+    width: 80%;
+}
+
+.main-wrapper .give-away h2 {
+    color: #007AFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+}
+
+.main-wrapper .give-away .description {
+    color: #007AFF;
+}
+
+/* FORMS
+------------------------------------------ */
+.form-container {
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.form-wrapper form.form-airdrop {
+    margin-left: 300px;
+    width: 1800px;
+}
+
+.form-wrapper .form-title {
+    color: #007AFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.form-wrapper .description {
+    color: #007AFF;
+}
+
+.form-wrapper .form-items {
+    width: 600px;
+}
+
+.form-wrapper .form-items > * {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.form-wrapper .form-items.active > * {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.form-wrapper .form-items {
+    padding: 0 25px;
+}
+
+.form-wrapper .form-item-fields {
+    margin-top: 40px;
+}
+
+.form-wrapper .form-item-fields h4 {
+    color: #007AFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper .form-item-fields .form-group label {
+    color: #007AFF;
+}
+
+.form-wrapper .form-item-fields .form-group {
+    text-align: left;
+}
+
+.form-wrapper .form-item-fields .form-group input {
+    border: 1px solid #007AFF;
+    border-radius: 0;
+    color: #007AFF;
+    font-size: 24px;
+}
+
+.form-wrapper .form-item-fields .form-group .form-control.is-invalid {
+    border-color: #DC3545;
+}
+
+.form-wrapper .form-item-fields .form-group .btn-next,
+.form-wrapper .form-item-fields .form-group .btn-send {
+    border-radius: 0;
+    font-weight: 300;
+    padding: 10px 30px;
+}
+
+.form-wrapper .form-item-fields .form-btn {
     margin-top: 50px;
-    padding: 20px 50px;
-    -webkit-box-shadow: 0 4px 45px rgba(0,0,0,.25), 0 4px 18px rgba(0,0,0,.22);
-            box-shadow: 0 4px 45px rgba(0,0,0,.25), 0 4px 18px rgba(0,0,0,.22);
-    width: 70%;
+    text-align: right;
+}
+
+.form-wrapper .form-item-head .form-item-download .btn-download:not(:last-child) {
+    margin-right: 10px;
+}
+
+.form-wrapper .form-download .btn-download {
+    border-radius: 0;
+    font-weight: 300;
+    padding: 10px;
+    width: 140px;
+}
+
+.form-wrapper .form-social .social-icon {
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+.form-wrapper .form-social .social-facebook span {
+    color: #3B5998;
+}
+
+.form-wrapper .form-social .social-linkedin span {
+    color: #007bb6;
+}
+
+.form-wrapper .form-social .social-twitter span {
+    color: #55ACED;
+}
+
+.form-wrapper .form-social .social-telegram span {
+    color: #2DA3DB;
+}
+
+.form-wrapper .form-social .social-reddit span {
+    color: #FE630A;
+}
+
+.form-wrapper .form-social .form-input {
+    width: 100%;
+}
+
+.form-container .alert-success {
+    background: #FAFAFA;
+    border-color: #FAFAFA;
+    color: #007AFF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* ELIGIBILITY
+------------------------------------------ */
+.btn-eligibility {
+    bottom: 0;
+    left: 10px;
+    position: absolute;
+}
+
+.modal-eligibility .modal-content {
+    border-radius: 0;
+    color: #007AFF;
+}
+
+.modal-eligibility .modal-content h2,
+.modal-eligibility .modal-content p {
+    font-weight: 300;
+}
+
+.modal-eligibility .modal-content .modal-title {
+    margin-bottom: 10px;
+}
+
+.modal-eligibility .modal-content .modal-title button {
+    color: #007AFF;
+}
+
+.modal-eligibility .modal-content .modal-body {
+    padding: 30px;
+}
+
+.modal-eligibility .modal-dialog {
+    max-width: 700px;
+}
+/* FOOTER
+------------------------------------------ */
+footer {
+    background: #003D80;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding: 30px 0;
+}
+
+footer .monico-logo {
+    margin: 0 auto 30px;
+    width: 140px;
+}
+
+footer ul.list-inline li.list-inline-item {
+    position: relative;
+    margin-right: 0;
+    padding: 0 10px;
+}
+
+footer ul li:not(:last-child)::after {
+    color: #FFFFFF;
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-size: 4px;
+    font-weight: 900;
+    margin-right: -4px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+footer ul li a,
+footer ul li a:hover {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 990px) {
+
 }
