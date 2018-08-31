@@ -107,14 +107,14 @@ function formAirdrop() {
 
     $('form.form-airdrop').animate({'margin-left' :  widthFourth + 'px'});
 
-    $('.btn-next-download').on('click', function(e) {
+    $('.btn-next-beta').on('click', function(e) {
         e.preventDefault();
 
         var hasError = false;
 
         $('form[name="form-airdrop"] input').removeClass('is-invalid');
 
-        if (!$('#inputEthAddress').val() || $('#inputEthAddress').val() === '') {
+        /*if (!$('#inputEthAddress').val() || $('#inputEthAddress').val() === '') {
             $('#inputEthAddress')
                 .addClass('is-invalid')
                 .parent()
@@ -140,23 +140,25 @@ function formAirdrop() {
                 .text('Invalid Email Address.');
 
             hasError = true;
-        }
+        }*/
 
         if (!hasError) {
             $('form.form-airdrop .form-items').removeClass('active');
-            $('form.form-airdrop .form-share').addClass('active');
+            $('form.form-airdrop .form-beta').addClass('active');
             $('form.form-airdrop').animate({'margin-left' : '-' + widthFourth + 'px'});
         }
     });
 
-    $('.btn-next-share').on('click', function(e) {
+    $('.btn-next-download').on('click', function(e) {
         e.preventDefault();
 
-        $('form.form-airdrop .form-items').removeClass('active');
-        $('form.form-airdrop .form-social').addClass('active');
+        $('form.form-airdrop .form-share').removeClass('active');
+        $('form.form-airdrop .form-download').addClass('active');
 
         $('form.form-airdrop').animate({'margin-left' : '-' + (widthFourth + widthHalf) + 'px'});
     });
+
+
 
     $('.btn-airdrop-send').on('click', function(e) {
         e.preventDefault();

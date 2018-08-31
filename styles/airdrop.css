@@ -108,8 +108,9 @@ header .navbar {
     margin-bottom: 20px;
 }
 
-.form-wrapper .form-item-fields .form-group label {
+.form-wrapper .form-item-fields .form-group label a {
     color: #007AFF;
+    text-decoration: underline;
 }
 
 .form-wrapper .form-item-fields .form-group {
@@ -120,7 +121,7 @@ header .navbar {
     border: 1px solid #007AFF;
     border-radius: 0;
     color: #007AFF;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .form-wrapper .form-item-fields .form-group .form-control.is-invalid {
@@ -156,6 +157,10 @@ header .navbar {
     width: 100px;
 }
 
+.form-wrapper .form-social .social-icon .fab {
+    display: block;
+}
+
 .form-wrapper .form-social .social-facebook span {
     color: #3B5998;
 }
@@ -176,7 +181,7 @@ header .navbar {
     color: #FE630A;
 }
 
-.form-wrapper .form-social .form-input {
+.form-wrapper .form-input {
     width: 100%;
 }
 
@@ -189,6 +194,17 @@ header .navbar {
     margin-top: 50px;
     text-align: center;
 }
+
+.form-beta .radio-icons {
+    font-size: 20px;
+    padding: 6px 0;
+}
+
+.form-beta .radio-icons .radio-choice {
+    margin-right: 20px;
+}
+
+
 
 /* ELIGIBILITY
 ------------------------------------------ */
