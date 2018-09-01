@@ -55,6 +55,56 @@ function formAirdrop() {
 
         $('form[name="form-airdrop"] input').removeClass('is-invalid');
 
+        if (!$('#inputFacebook').val() || $('#inputFacebook').val() === '') {
+            $('#inputFacebook')
+                .addClass('is-invalid')
+                .parent()
+                .find('.invalid-feedback')
+                .text('Facebook URL/Name is required.');
+
+            hasError = true;
+        }
+
+        if (!$('#inputLinkedIn').val() || $('#inputLinkedIn').val() === '') {
+            $('#inputLinkedIn')
+                .addClass('is-invalid')
+                .parent()
+                .find('.invalid-feedback')
+                .text('Linkedin URL/name is required.');
+
+            hasError = true;
+        }
+
+        if (!$('#inputTwitter').val() || $('#inputTwitter').val() === '') {
+            $('#inputTwitter')
+                .addClass('is-invalid')
+                .parent()
+                .find('.invalid-feedback')
+                .text('Twitter URL/name is required.');
+
+            hasError = true;
+        }
+
+        if (!$('#inputTelegram').val() || $('#inputTelegram').val() === '') {
+            $('#inputTelegram')
+                .addClass('is-invalid')
+                .parent()
+                .find('.invalid-feedback')
+                .text('Telegram name is required.');
+
+            hasError = true;
+        }
+
+        if (!$('#inputReddit').val() || $('#inputReddit').val() === '') {
+            $('#inputReddit')
+                .addClass('is-invalid')
+                .parent()
+                .find('.invalid-feedback')
+                .text('Reddit name is required.');
+
+            hasError = true;
+        }
+
         if (!hasError) {
             $('form.form-airdrop .form-items').removeClass('active');
             $('form.form-airdrop .form-beta').addClass('active');
@@ -144,6 +194,14 @@ function formAirdrop() {
         }, 1000);
 
     });
+}
+
+function fbShare() {
+    FB.ui({
+        method: 'share',
+        display: 'popup',
+        href: 'https://www.monico.ph/',
+    }, function(response){});
 }
 
 // validate email address

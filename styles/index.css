@@ -434,6 +434,7 @@ footer ul.list-social li:not(:last-child)::after {
 
 .section-hero .phone-slider img { width: 100%; }
 
+.section-hero h1,
 .section-hero h2 {
     color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
