@@ -238,7 +238,7 @@ jQuery(function($) {
         if (top > nextSection.top - 100) {
             $('.side-navigation').css('left', '10px');
         } else {
-            $('.side-navigation').css('left', '-100px');
+            $('.side-navigation').css('left', '-120px');
         }
 
         // Get container scroll position
