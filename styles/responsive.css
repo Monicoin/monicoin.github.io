@@ -835,13 +835,14 @@
 
     .section-hero .phone-wrapper .banner-frame {
         margin-right: -115px;
+        top: -10px;
         width: 230px;
     }
 
     .section-hero .phone-wrapper .banner-wrapper ul li:nth-child(3) {
         margin-left: -84px;
         width: 159px;
-        top: -3px;
+        top: 0;
     }
 
     .section-hero .phone-wrapper .banner-wrapper ul li:nth-child(2) {
