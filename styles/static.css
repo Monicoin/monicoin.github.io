@@ -60,6 +60,11 @@ header .navbar-dark .navbar-nav .nav-link.btn {
     margin-bottom: 20px;
 }
 
+.main-wrapper h2, .main-wrapper h3 {
+    color: #007AFF;
+    font-family: 'Oswald', sans-serif;
+}
+
 /* FOOTER
 ------------------------------------------ */
 footer {
