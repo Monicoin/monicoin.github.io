@@ -55,9 +55,10 @@ function formAirdrop() {
 
         $('form[name="form-airdrop"] input').removeClass('is-invalid');
 
-        if (!$('#inputFacebook').val() || $('#inputFacebook').val() === '') {
+        if (!$('#inputFacebook').val() || $('#inputFacebook').val().trim() === '') {
             $('#inputFacebook')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Facebook URL/Name is required.');
@@ -65,9 +66,10 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputLinkedIn').val() || $('#inputLinkedIn').val() === '') {
+        if (!$('#inputLinkedIn').val() || $('#inputLinkedIn').val().trim() === '') {
             $('#inputLinkedIn')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Linkedin URL/name is required.');
@@ -75,9 +77,10 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputTwitter').val() || $('#inputTwitter').val() === '') {
+        if (!$('#inputTwitter').val() || $('#inputTwitter').val().trim() === '') {
             $('#inputTwitter')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Twitter URL/name is required.');
@@ -85,9 +88,10 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputTelegram').val() || $('#inputTelegram').val() === '') {
+        if (!$('#inputTelegram').val() || $('#inputTelegram').val().trim() === '') {
             $('#inputTelegram')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Telegram name is required.');
@@ -95,9 +99,10 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputReddit').val() || $('#inputReddit').val() === '') {
+        if (!$('#inputReddit').val() || $('#inputReddit').val().trim() === '') {
             $('#inputReddit')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Reddit name is required.');
@@ -118,10 +123,12 @@ function formAirdrop() {
         var hasError = false;
 
         $('form[name="form-airdrop"] input').removeClass('is-invalid');
+        $('.recaptcha-field').removeClass('is-invalid');
 
-        if (!$('#inputFirst').val() || $('#inputFirst').val() === '') {
+        if (!$('#inputFirst').val() || $('#inputFirst').val().trim() === '') {
             $('#inputFirst')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('First name is required.');
@@ -129,9 +136,10 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputLast').val() || $('#inputLast').val() === '') {
+        if (!$('#inputLast').val() || $('#inputLast').val().trim() === '') {
             $('#inputLast')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Last name is required.');
@@ -139,9 +147,10 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputEmail').val() || $('#inputEmail').val() === '') {
+        if (!$('#inputEmail').val() || $('#inputEmail').val().trim() === '') {
             $('#inputEmail')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Email is required.');
@@ -157,12 +166,23 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputEthAddress').val() || $('#inputEthAddress').val() === '') {
+        if (!$('#inputEthAddress').val() || $('#inputEthAddress').val().trim() === '') {
             $('#inputEthAddress')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('ETH ERC20 address is required.');
+
+            hasError = true;
+        }
+
+        var recaptcha = grecaptcha.getResponse();
+        if(recaptcha.length == 0) {
+            $('.recaptcha-field')
+                .addClass('is-invalid')
+                .find('.invalid-feedback')
+                .text('Captcha Failed');
 
             hasError = true;
         }

@@ -1,3 +1,22 @@
+var inquiryRecaptcha, modalRecaptcha;
+
+// multiple recaptcha widgets
+var onloadCallback = function() {
+    inquiryRecaptcha = grecaptcha.render('inquiryRecaptcha',
+        {
+            'sitekey' : '6Lc2GG4UAAAAANlde2HHqAzPXy4u2C8p2gQMRUf6',
+            'theme' : 'light'
+        }
+    );
+
+    modalRecaptcha = grecaptcha.render('modalRecaptcha',
+        {
+            'sitekey' : '6Lc2GG4UAAAAANlde2HHqAzPXy4u2C8p2gQMRUf6',
+            'theme' : 'light'
+        }
+    );
+};
+
 jQuery(function($) {
     AOS.init({
         easing: 'ease-out-back',
@@ -269,7 +288,6 @@ jQuery(function($) {
         $('html, body').stop().animate({ scrollTop: position }, 500);
         e.preventDefault();
     });
-
     // call fuction for form inquiry
     formInquiry();
 });
@@ -285,11 +303,13 @@ function formInquiry() {
     $('button#btn-form-submit').click(function() {
         var hasError = false;
         $('form[name="form-inquiry"] input').removeClass('is-invalid');
+        $('.recaptcha-field').removeClass('is-invalid');
         $('form[name="form-inquiry"]').find('.alert').remove();
 
-        if (!$('#inputFirst').val() || $('#inputFirst').val() === '') {
+        if (!$('#inputFirst').val() || $('#inputFirst').val().trim() === '') {
             $('#inputFirst')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('First Name is required.');
@@ -297,9 +317,10 @@ function formInquiry() {
             hasError = true;
         }
 
-        if (!$('#inputLast').val() || $('#inputLast').val() === '') {
+        if (!$('#inputLast').val() || $('#inputLast').val().trim() === '') {
             $('#inputLast')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Last Name is required.');
@@ -307,9 +328,10 @@ function formInquiry() {
             hasError = true;
         }
 
-        if (!$('#inputCompany').val() || $('#inputCompany').val() === '') {
+        if (!$('#inputCompany').val() || $('#inputCompany').val().trim() === '') {
             $('#inputCompany')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Company is required.');
@@ -317,9 +339,10 @@ function formInquiry() {
             hasError = true;
         }
 
-        if (!$('#inputEmail').val() || $('#inputEmail').val() === '') {
+        if (!$('#inputEmail').val() || $('#inputEmail').val().trim() === '') {
             $('#inputEmail')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Email is required.');
@@ -331,6 +354,16 @@ function formInquiry() {
                 .parent()
                 .find('.invalid-feedback')
                 .text('Invalid Email Address.');
+
+            hasError = true;
+        }
+
+        var recaptcha = grecaptcha.getResponse(inquiryRecaptcha);
+        if(recaptcha.length == 0) {
+            $('.recaptcha-field')
+                .addClass('is-invalid')
+                .find('.invalid-feedback')
+                .text('Captcha Failed');
 
             hasError = true;
         }
@@ -387,11 +420,13 @@ function formInquiry() {
 
         $('form[name="form-signup"] input').removeClass('is-invalid');
         $('form[name="form-signup"] .modal-body').find('.alert').remove();
+        $('.modal-recaptcha-field').removeClass('is-invalid');
 
         // validate fields
-        if (!$('#modalFirstName').val() || $('#modalFirstName').val() === '') {
+        if (!$('#modalFirstName').val() || $('#modalFirstName').val().trim() === '') {
             $('#modalFirstName')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('First Name is required.');
@@ -399,9 +434,10 @@ function formInquiry() {
             hasError = true;
         }
 
-        if (!$('#modalLastName').val() || $('#modalLastName').val() === '') {
+        if (!$('#modalLastName').val() || $('#modalLastName').val().trim() === '') {
             $('#modalLastName')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Last Name is required.');
@@ -409,9 +445,10 @@ function formInquiry() {
             hasError = true;
         }
 
-        if (!$('#modalEmail').val() || $('#modalEmail').val() === '') {
+        if (!$('#modalEmail').val() || $('#modalEmail').val().trim() === '') {
             $('#modalEmail')
                 .addClass('is-invalid')
+                .val('')
                 .parent()
                 .find('.invalid-feedback')
                 .text('Email is required.');
@@ -423,6 +460,16 @@ function formInquiry() {
                 .parent()
                 .find('.invalid-feedback')
                 .text('Invalid Email Address.');
+
+            hasError = true;
+        }
+
+        var recaptcha = grecaptcha.getResponse(modalRecaptcha);
+        if(recaptcha.length == 0) {
+            $('.modal-recaptcha-field')
+                .addClass('is-invalid')
+                .find('.invalid-feedback')
+                .text('Captcha Failed');
 
             hasError = true;
         }

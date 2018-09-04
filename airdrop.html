@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
         <!-- STYLES -->
-        <link rel="stylesheet" type="text/css" href="styles/airdrop.css?v=3">
+        <link rel="stylesheet" type="text/css" href="styles/airdrop.css?v=5">
 
         <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -52,7 +52,6 @@
         <link itemprop="url" content="https://www.monico.ph/" />
         <link itemprop="logo" content="https://www.monico.ph/images/monico-logo.png" />
         <link itemprop="image" content="https://www.monico.ph/images/b-fb-share.jpg" />
-    </head>
     </head>
     <body>
         <!-- START: Header -->
@@ -228,6 +227,13 @@
                                         <div class="invalid-feedback"></div>
                                     </div>
                                 </div>
+
+                                <div class="form-group recaptcha-field">
+                                    <script src='https://www.google.com/recaptcha/api.js'></script>
+                                    <div class="g-recaptcha" data-sitekey="6Lc2GG4UAAAAANlde2HHqAzPXy4u2C8p2gQMRUf6"></div>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
                                 <div class="form-group form-btn text-right">
                                     <button type="button" class="btn btn-primary btn-block btn-send btn-airdrop-send">SUBMIT FOR AIRDROPS</button>
                                     <a href="#" class="btn btn-link btn-back" data-to="form-beta"><i class="fas fa-arrow-left"></i> Back</a>

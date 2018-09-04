@@ -175,6 +175,12 @@ header .navbar-dark {
     display: inline-block;
 }
 
+/* MODAL PLATFORM
+------------------------------------------ */
+.modal-recaptcha-field.is-invalid .invalid-feedback {
+    display: block;
+}
+
 /* FOOTER
 ------------------------------------------ */
 footer {
@@ -1841,6 +1847,10 @@ footer ul.list-social li:not(:last-child)::after {
 .section-call-to-action .form-content form button#btn-form-submit {
     border-radius: 0;
     width: 100%;
+}
+
+.section-call-to-action .recaptcha-field.is-invalid .invalid-feedback {
+    display: block;
 }
 
 select:not([multiple]) {
