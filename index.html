@@ -54,6 +54,9 @@
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone.min.js"></script>
+
         <!-- RECAPTCHA -->
         <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'></script>
 
@@ -153,14 +156,13 @@
                         <a href="#section-partnership" class="scroll-to"></a>
                         <span>PARTNERSHIP</span>
                     </li> -->
-                    <!--
                     <li class="side-menu" id="side-nav-our-team-advisors">
                         <a href="#section-our-team-advisors" class="scroll-to"></a>
-                        <span>OUR TEAM AND ADVISORS</span>
-                    </li> -->
+                        <span>OUR ADVISORS</span>
+                    </li>
                     <li class="side-menu" id="side-nav-call-to-action">
                         <a href="#section-call-to-action" class="scroll-to"></a>
-                        <span>JOIN THE CRYPTO REVOLUTION TODAY</span>
+                        <span>CONTACT US</span>
                     </li>
                 </ul>
             </div>
@@ -838,69 +840,124 @@
                 <!-- START: Roadmap -->
                 <div class="section-item section-roadmap" id="section-roadmap">
                     <div class="container">
-                        <div class="section-title aos-init aos-animate"
-                            data-aos="fade-up">
-                            <h2 class="text-center">Roadmap</h2>
-                        </div>
-                        <div class="roadmap-list-wrapper aos-init aos-animate"
-                            data-aos="fade-up">
-                            <div class="roadmap-list d-flex">
-                                <div class="roadmap-item">
-                                    <h3 class="text-center"><time datetime="2018-04">APRIL 2018</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>Conceptual MVP Launch</h4>
-                                        <p>ico.openovate.com</p>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title aos-init aos-animate"
+                                    data-aos="fade-up">
+                                    <h2 class="text-center">Roadmap</h2>
                                 </div>
-                                <div class="roadmap-item">
-                                    <h3 class="text-center"><time datetime="2018-05">MAY 2018</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>Planning</h4>
-                                        <p>Feedback, Technical Design, Financial Planning, Marketing Approaches and Documentation.</p>
+                                <div class="roadmap-list-wrapper aos-init aos-animate"
+                                    data-aos="fade-up">
+                                    <div class="roadmap-list d-flex">
+                                        <div class="roadmap-item">
+                                            <h3 class="text-center"><time datetime="2018-04">APRIL 2018</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>Conceptual MVP Launch</h4>
+                                                <p>ico.openovate.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-item">
+                                            <h3 class="text-center"><time datetime="2018-05">MAY 2018</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>Planning</h4>
+                                                <p>Feedback, Technical Design, Financial Planning, Marketing Approaches and Documentation.</p>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-item active">
+                                            <h3 class="text-center"><time datetime="2018-07">JULY 2018</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>Development Starts</h4>
+                                                <p>Mobile, Web and ServerOPs.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="roadmap-item active">
-                                    <h3 class="text-center"><time datetime="2018-07">JULY 2018</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>Development Starts</h4>
-                                        <p>Mobile, Web and ServerOPs.</p>
+                                    <div class="roadmap-list d-flex flex-row-reverse">
+                                        <div class="roadmap-item inactive">
+                                            <h3 class="text-center"><time datetime="2018-09">OCTOBER 2018</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>Token Sale Begins</h4>
+                                                <p>Alpha release available for Android which includes wallets, project listings, and purchasing tokens.</p>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-item inactive">
+                                            <h3 class="text-center"><time datetime="2018-11">NOVEMBER 2018</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>iOS Release</h4>
+                                                <p>Beta Release in both iOS and Android. App Store and Play Store Accepted. Featuring selling tokens, KYC and vetted projects.</p>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-item inactive">
+                                            <h3 class="text-center"><time datetime="2018-12">DECEMBER 2018</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>Partnership and Integrations</h4>
+                                                <p>In various listing websites, crpto-wallet mobile apps, social and blogging networks, and other referral websites. Slight market push.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="roadmap-item inactive">
-                                    <h3 class="text-center"><time datetime="2018-09">OCTOBER 2018</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>Token Sale Begins</h4>
-                                        <p>Alpha release available for Android which includes wallets, project listings, and purchasing tokens.</p>
+                                    <div class="roadmap-list d-flex">
+                                        <div class="roadmap-item inactive">
+                                            <h3 class="text-center"><time datetime="2019-02">FEBRUARY 2019</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>First Major Release</h4>
+                                                <p>In both iOS and Android. Projects can now using the web to sign up, list their projects and use services. API access will be available.</p>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-item inactive">
+                                            <h3 class="text-center"><time datetime="2019-04">APRIL 2019</time></h3>
+                                            <div class="roadmap-detail">
+                                                <h4>SEA Regulations</h4>
+                                                <p>Expanding projects around Southeast Asia by complying with government associations.</p>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-item">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="roadmap-list d-flex flex-row-reverse">
-                                <div class="roadmap-item inactive">
-                                    <h3 class="text-center"><time datetime="2018-11">NOVEMBER 2018</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>iOS Release</h4>
-                                        <p>Beta Release in both iOS and Android. App Store and Play Store Accepted. Featuring selling tokens, KYC and vetted projects.</p>
-                                    </div>
-                                </div>
-                                <div class="roadmap-item inactive">
-                                    <h3 class="text-center"><time datetime="2018-12">DECEMBER 2018</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>Partnership and Integrations</h4>
-                                        <p>In various listing websites, crpto-wallet mobile apps, social and blogging networks, and other referral websites. Slight market push.</p>
-                                    </div>
-                                </div>
-                                <div class="roadmap-item inactive">
-                                    <h3 class="text-center"><time datetime="2019-02">FEBRUARY 2019</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>First Major Release</h4>
-                                        <p>In both iOS and Android. Projects can now using the web to sign up, list their projects and use services. API access will be available.</p>
-                                    </div>
-                                </div>
-                                <div class="roadmap-item inactive">
-                                    <h3 class="text-center"><time datetime="2019-04">APRIL 2019</time></h3>
-                                    <div class="roadmap-detail">
-                                        <h4>SEA Regulations</h4>
-                                        <p>Expanding projects around Southeast Asia by complying with government associations.</p>
+                            <div class="col-md-4 hidden">
+                                <div class="card card-git-feed">
+                                    <div class="card-header">Getting Things Done</div>
+                                    <div class="card-body">
+                                        <div class="feed-wrapper">
+                                            <ul class="feed-list">
+                                                <li class="feed-loader-wrapper">
+                                                    <div class="feed-loader">
+                                                        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+                                                          <g transform="rotate(-90 43 -17)">
+                                                            <circle cx="0" cy="0" r="8">
+                                                              <animateTransform id="b" attributeName="transform" dur="0.2s" type="translate" values="0 0; 14 0; 0 0" begin="0;a.end"/>
+                                                            </circle>
+                                                          </g>
+                                                          <g transform="rotate(-30 124.962 -145.406)">
+                                                            <circle cx="0" cy="0" r="8">
+                                                              <animateTransform id="c" attributeName="transform" dur="0.2s" type="translate" values="0 0; 14 0; 0 0" begin="b.end"/>
+                                                            </circle>
+                                                          </g>
+                                                          <g transform="rotate(30 -98.962 205.406)">
+                                                            <circle cx="0" cy="0" r="8">
+                                                              <animateTransform id="d" attributeName="transform" dur="0.2s" type="translate" values="0 0; 14 0; 0 0" begin="c.end"/>
+                                                            </circle>
+                                                          </g>
+                                                          <g transform="rotate(90 -17 77)">
+                                                            <circle cx="0" cy="0" r="8">
+                                                              <animateTransform id="e" attributeName="transform" dur="0.2s" type="translate" values="0 0; 14 0; 0 0" begin="d.end-0.02s"/>
+                                                            </circle>
+                                                          </g>
+                                                          <g transform="rotate(150 4.962 42.594)">
+                                                            <circle cx="0" cy="0" r="8">
+                                                              <animateTransform id="f" attributeName="transform" dur="0.2s" type="translate" values="0 0; 14 0; 0 0" begin="e.end"/>
+                                                            </circle>
+                                                          </g>
+                                                          <g transform="rotate(-150 21.038 17.406)">
+                                                            <circle cx="0" cy="0" r="8">
+                                                              <animateTransform id="a" attributeName="transform" dur="0.2s" type="translate" values="0 0; 14 0; 0 0" begin="f.end"/>
+                                                            </circle>
+                                                          </g>
+                                                        </svg>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1011,10 +1068,10 @@
                 </div>
                 <!-- END: Partnership -->
                 <!-- START: Our Team / Advisors -->
-                <div class="section-item section-our-team-advisors hidden" id="section-our-team-advisors">
-                    <h2 class="text-center aos-init aos-animate"
+                <div class="section-item section-our-team-advisors" id="section-our-team-advisors">
+                    <h2 class="text-center hidden aos-init aos-animate"
                         data-aos="fade-up">Our Team</h2>
-                    <div class="container">
+                    <div class="container hidden">
                         <div class="people-list d-flex justify-content-center">
                             <div class="people-item aos-init aos-animate"
                                 data-aos="flip-right">
@@ -1094,47 +1151,80 @@
                         <div class="people-list d-flex justify-content-center">
                             <div class="people-item aos-init aos-animate"
                                 data-aos="flip-right">
-                                <div class="hexagon"></div>
-                                <h3>Artie Lopez</h3>
-                                <div class="position text-muted">CEO</div>
-                            </div>
-                            <div class="people-item aos-init aos-animate"
-                                data-aos="flip-right">
-                                <div class="hexagon"></div>
-                                <h3>Artie Lopez</h3>
-                                <div class="position text-muted">CEO</div>
-                            </div>
-                            <div class="people-item aos-init aos-animate"
-                                data-aos="flip-right">
-                                <div class="hexagon"></div>
-                                <h3>Artie Lopez</h3>
-                                <div class="position text-muted">CEO</div>
-                            </div>
-                            <div class="people-item aos-init aos-animate"
-                                data-aos="flip-right">
-                                <div class="hexagon"></div>
-                                <h3>Artie Lopez</h3>
-                                <div class="position text-muted">CEO</div>
+                                <div class="hexagon">
+                                    <a href="https://en.wikipedia.org/wiki/Henry_Lim_Bon_Liong" target="_blank" title="Henry Lim Bon Leong">
+                                        <img src="/images/henry-hex.png" alt="Henry Lim Bon Leong">
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="https://en.wikipedia.org/wiki/Henry_Lim_Bon_Liong" target="_blank" title="Henry Lim Bon Leong">Henry Lim Bon Leong</a>
+                                </h3>
+                                <div class="position text-muted">Sterling Group of Companies</div>
+                                <div class="description text-muted">
+                                    <small>Investor, acquirer and executive advisor, Sir Henry is the chairman of one of the largest private conglomerates in Southeast Asia.</small>
+                                </div>
                             </div>
                         </div>
                         <div class="people-list d-flex justify-content-center">
                             <div class="people-item aos-init aos-animate"
                                 data-aos="flip-right">
-                                <div class="hexagon"></div>
-                                <h3>Artie Lopez</h3>
-                                <div class="position text-muted">CEO</div>
+                                <div class="hexagon">
+                                    <a href="https://www.linkedin.com/in/jojof/" target="_blank" title="Jojo Flores">
+                                        <img src="/images/jojo-hex.png" alt="Jojo Flores">
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="https://www.linkedin.com/in/jojof/" target="_blank" title="Jojo Flores">Jojo Flores</a>
+                                </h3>
+                                <div class="position text-muted">Plug and Play Tech Center</div>
+                                <div class="description text-muted">
+                                    <small>Silicon Valley VC, Angel and Advisor, Jojo helped guide hundreds of companies in growth, funding and exits all around the US and Asia.</small>
+                                </div>
                             </div>
                             <div class="people-item aos-init aos-animate"
                                 data-aos="flip-right">
-                                <div class="hexagon"></div>
-                                <h3>Artie Lopez</h3>
-                                <div class="position text-muted">CEO</div>
+                                <div class="hexagon">
+                                    <a href="https://www.linkedin.com/in/andersontan/" target="_blank" title="Anderson Tan">
+                                        <img src="/images/anderson-hex.png" alt="Anderson Tan">
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="https://www.linkedin.com/in/andersontan/" target="_blank" title="Anderson Tan">Anderson Tan</a>
+                                </h3>
+                                <div class="position text-muted">Alpha Omega Ventures</div>
+                                <div class="description text-muted">
+                                    <small>Anderson is a successful entrepreneur and super angel investor of popular companies like DocuSign, Cloudera, Snapchat, Pinterest, Lyft, and SpaceX.</small>
+                                </div>
                             </div>
                             <div class="people-item aos-init aos-animate"
                                 data-aos="flip-right">
-                                <div class="hexagon"></div>
-                                <h3>Artie Lopez</h3>
-                                <div class="position text-muted">CEO</div>
+                                <div class="hexagon">
+                                    <a href="https://www.linkedin.com/in/jayfajardo/" target="_blank" title="Jay Fajardo">
+                                        <img src="/images/jay-hex.png" alt="Jay Fajardo">
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="https://www.linkedin.com/in/jayfajardo/" target="_blank" title="Jay Fajardo">Jay Fajardo</a>
+                                </h3>
+                                <div class="position text-muted">Launch Garage</div>
+                                <div class="description text-muted">
+                                    <small>Technoprenuer and Founder of one of the  largest and successful incubators in the Philippines, Jay has expertise in blockchain and toke sale platforms</small>
+                                </div>
+                            </div>
+                            <div class="people-item aos-init aos-animate"
+                                data-aos="flip-right">
+                                <div class="hexagon">
+                                    <a href="https://www.linkedin.com/in/brad-geiser-6b98904b/" target="_blank" title="Brad Geiser">
+                                        <img src="/images/brad-hex.png" alt="Brad Geiser">
+                                    </a>
+                                </div>
+                                <h3>
+                                    <a href="https://www.linkedin.com/in/brad-geiser-6b98904b/" target="_blank" title="Brad Geiser">Brad Geiser</a>
+                                </h3>
+                                <div class="position text-muted">GeiserMaclang</div>
+                                <div class="description text-muted">
+                                    <small>Leading social marketer and PR expert, Brad has been in the background of many blockchain advocaies in SEA, connecting industry leaders to industry leaders.</small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1244,7 +1334,10 @@
                             <a href="#section-ecosystem" class="scroll-to" title="As an Ecosystem">As an Ecosystem</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" title="Road Map">Road Map</a>
+                            <a href="#section-roadmap" title="Road Map">Road Map</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#section-our-team-advisors" title="Our Advisors">Our Advisors</a>
                         </li>
                     </ul>
                     <ul class="list-inline hidden">
@@ -1265,9 +1358,6 @@
                         </li>
                         <li class="list-inline-item">
                             <a href="#" title="Our Team">Our Team</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" title="Our Advisors">Our Advisors</a>
                         </li>
                     </ul>
                     <ul class="list-inline list-social">
@@ -1309,6 +1399,22 @@
             </section>
         </div>
     </body>
+    <!-- START: FEED TEMPLATE -->
+    <script id="feed-template" type="text/template">
+        <li class="feed-item">
+            <div class="d-flex">
+                <div class="feed-user-image">
+                    <img src="{{AVATAR}}" />
+                </div>
+                <div class="feed-details flex-fill">
+                    <div class="feed-username">{{NAME}}</div>
+                    <div class="feed-action">{{DESCRIPTION}}</div>
+                    <small class="text-muted"><time datetime="2018-07-19 00:00">{{TIMEAGO}}</time></small>
+                </div>
+            </div>
+        </li>
+    </script>
+    <!-- END: FEED TEMPLATE -->
     <div class="modal fade modal-platform" id="modalPlatform" tabindex="-1" role="dialog" aria-labelledby="modalPlatformLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

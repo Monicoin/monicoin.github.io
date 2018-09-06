@@ -288,8 +288,13 @@ jQuery(function($) {
         $('html, body').stop().animate({ scrollTop: position }, 500);
         e.preventDefault();
     });
+
     // call fuction for form inquiry
     formInquiry();
+
+    setInterval(function() {
+        //activityFeed();
+    }, 10000);
 });
 
 function formInquiry() {
@@ -517,4 +522,78 @@ function formInquiry() {
         var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return regex.test(String(email).toLowerCase());
     }
+}
+
+
+// Changes XML to JSON
+// Modified version from here: http://davidwalsh.name/convert-xml-json
+function xmlToJson(xml) {
+
+	// Create the return object
+	var obj = {};
+
+	if (xml.nodeType == 1) { // element
+		// do attributes
+		if (xml.attributes.length > 0) {
+		obj["@attributes"] = {};
+			for (var j = 0; j < xml.attributes.length; j++) {
+				var attribute = xml.attributes.item(j);
+				obj["@attributes"][attribute.nodeName] = attribute.nodeValue;
+			}
+		}
+	} else if (xml.nodeType == 3) { // text
+		obj = xml.nodeValue;
+	}
+
+	// do children
+	// If just one text node inside
+	if (xml.hasChildNodes() && xml.childNodes.length === 1 && xml.childNodes[0].nodeType === 3) {
+		obj = xml.childNodes[0].nodeValue;
+	}
+	else if (xml.hasChildNodes()) {
+		for(var i = 0; i < xml.childNodes.length; i++) {
+			var item = xml.childNodes.item(i);
+			var nodeName = item.nodeName;
+			if (typeof(obj[nodeName]) == "undefined") {
+				obj[nodeName] = xmlToJson(item);
+			} else {
+				if (typeof(obj[nodeName].push) == "undefined") {
+					var old = obj[nodeName];
+					obj[nodeName] = [];
+					obj[nodeName].push(old);
+				}
+				obj[nodeName].push(xmlToJson(item));
+			}
+		}
+	}
+	return obj;
+}
+
+function activityFeed() {
+    var temp;
+
+    var request = $.ajax({
+        url: 'http://localhost:3000/feed-activity',
+        method: "GET",
+        dataType: 'xml'
+    });
+
+    request.done(function(result) {
+        var feeds = xmlToJson(result);
+        temp = $('#feed-template').html();
+        var feedTemp;
+
+        $('.card-git-feed .feed-list').html('');
+
+        $.each(feeds.feed.entry, function(key, data) {
+            // update template
+            feedTemp = temp.replace('{{DESCRIPTION}}', data.title)
+                .replace('{{AVATAR}}', data["media:thumbnail"]["@attributes"]["url"])
+                .replace('{{NAME}}', data.author.name)
+                .replace('{{TIMEAGO}}', moment(data.updated, "YYYYMMDD").tz('Asia/Manila').fromNow());
+
+            // update feed activity list
+            $('.card-git-feed .feed-list').append(feedTemp);
+        });
+    });
 }

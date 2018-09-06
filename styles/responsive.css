@@ -442,6 +442,14 @@
         display: none;
     }
 
+    .section-roadmap .roadmap-list:last-child .roadmap-item:last-child {
+        display: none;
+    }
+
+    .section-roadmap .roadmap-list:last-child .roadmap-item:nth-child(2)::before {
+        background: none;
+    }
+
     /* OPPORTUNITY TO SEIZE */
     .section-opportunity-to-seize {
         padding: 60px 0 50px;
@@ -725,6 +733,7 @@
 
     .section-our-team-advisors .people-list .people-item {
         margin: 0 0 50px;
+        padding: 0 7px;
         width: 50%;
     }
 
@@ -733,7 +742,6 @@
     }
 
     .section-our-team-advisors .hexagon {
-        height: 90px;
         margin: 50px auto 0;
         width: 150px;
     }

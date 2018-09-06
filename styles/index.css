@@ -615,7 +615,11 @@ footer ul.list-social li:not(:last-child)::after {
 .section-roadmap {
     background-color: #FFFFFF;
     position: relative;
-    padding: 190px 0 50px;
+    padding: 190px 0 15px;
+}
+
+.section-roadmap .container {
+    max-width: 1240px;
 }
 
 @-moz-keyframes pulse {
@@ -677,7 +681,7 @@ footer ul.list-social li:not(:last-child)::after {
     left: 0;
     position: absolute;
     top: 0;
-    width: 40%;
+    width: 41%;
 }
 
 .section-roadmap .section-title h2 {
@@ -776,12 +780,25 @@ footer ul.list-social li:not(:last-child)::after {
 }
 
 .section-roadmap .roadmap-list:first-child .roadmap-item:last-child {
-    border-right: 1px solid #554971;
+    border-right: 1px solid #A6D0FD;
 }
 
 .section-roadmap .roadmap-list:first-child .roadmap-item.active:last-child,
 .section-roadmap .roadmap-list:first-child .roadmap-item.inactive:last-child {
     border-right: 1px solid #939393;
+}
+
+.section-roadmap .roadmap-list.flex-row-reverse .roadmap-item.active h3::after {
+    background: #A6D0FD;
+}
+
+.section-roadmap .roadmap-list.flex-row-reverse .roadmap-item.active:last-child,
+.section-roadmap .roadmap-list.flex-row-reverse .roadmap-item.inactive:last-child {
+    border-left: 1px solid #939393;
+}
+
+.section-roadmap .roadmap-list.flex-row-reverse .roadmap-item:last-child {
+    border-left: 1px solid #A6D0FD;
 }
 
 .section-roadmap .roadmap-list .roadmap-item::after {
@@ -801,6 +818,14 @@ footer ul.list-social li:not(:last-child)::after {
 
 .section-roadmap .roadmap-list .roadmap-item.active::after {
     background-position: -22px 0;
+}
+
+.section-roadmap .roadmap-list:last-child .roadmap-item:last-child::after {
+    background: none;
+}
+
+.section-roadmap .roadmap-list:last-child .roadmap-item:nth-child(2) h3::after {
+    background: none;
 }
 
 .section-roadmap .roadmap-list .roadmap-item.inactive::after {
@@ -854,6 +879,91 @@ footer ul.list-social li:not(:last-child)::after {
 
 .section-roadmap .roadmap-list .roadmap-item .roadmap-detail p {
     font-weight: 300;
+}
+
+.section-roadmap .card-git-feed {
+    border-radius: 0;
+    border: 2px solid #E1f0FF;
+}
+
+.feed-loader {
+    height: 100vh;
+    width:   100%;
+    background: #007AFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-loader svg {
+    flex: 1;
+    width: 4em;
+    height: 4em;
+    fill: #FFFFFF;
+}
+
+.section-roadmap .card-git-feed .card-header {
+    color: #007AFF;
+    background: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid #E1F0FF;
+}
+
+.section-roadmap .card-git-feed .card-body {
+    background: #E1F0FF;
+}
+
+.section-roadmap .card-git-feed .feed-wrapper {
+    height: 850px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-roadmap .card-git-feed .feed-list {
+    bottom: 0;
+    list-style: none;
+    overflow-y: scroll;
+    padding: 0;
+    padding-right: 17px;
+    position: absolute;
+    left: 0;
+    margin-bottom: 0;
+    right: -17px;
+    top: 0;
+}
+
+.section-roadmap .card-git-feed .feed-list .feed-item {
+    background: #FFFFFF;
+    border-left: 10px solid #007AFF;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+}
+
+.section-roadmap .card-git-feed .feed-list .feed-item:last-child {
+    margin-bottom: 0;
+}
+
+.section-roadmap .card-git-feed .feed-list .feed-item:nth-child(even) {
+    border-left: 10px solid #003D80;
+}
+
+.section-roadmap .card-git-feed .feed-list .feed-item .feed-user-image {
+    width: 60px;
+}
+
+.section-roadmap .card-git-feed .feed-list .feed-item .feed-user-image img {
+    border-radius: 50%;
+    margin-top: 5px;
+    width: 60px;
+}
+
+.section-roadmap .card-git-feed .feed-list .feed-item .feed-details {
+    padding-left: 15px;
+}
+
+.section-roadmap .card-git-feed .feed-list .feed-details .feed-username {
+    color: #007AFF;
+    font-weight: 600;
 }
 
 /* DOWNLOAD WHITEPAPER
@@ -1555,25 +1665,49 @@ footer ul.list-social li:not(:last-child)::after {
 
 .section-our-team-advisors .people-item {
     margin: 20px 40px;
+    width: 230px;
 }
 
 .section-our-team-advisors .people-item .position,
+.section-our-team-advisors .people-item .description,
 .section-our-team-advisors .people-item h3 {
     text-align: center;
+}
+
+.section-our-team-advisors .people-item .position {
+    margin-bottom: 10px;
 }
 
 .section-our-team-advisors .people-item h3 {
     font-size: 14px;
 }
 
-.section-our-team-advisors .hexagon {
-    position: relative;
-    width: 200px;
-    height: 112px;
-    background-color: #007AFF;
-    margin: 86.6px 0;
+.section-our-team-advisors .people-item h3 a {
+    color: #000000;
 }
 
+.section-our-team-advisors .people-item h3 a:hover {
+    color: #007BB6;
+}
+
+.section-our-team-advisors .hexagon {
+    margin: 60px auto 15px;
+    position: relative;
+    width: 200px;
+}
+
+.section-our-team-advisors .hexagon a {
+    display: block;
+}
+
+.section-our-team-advisors .hexagon a:hover img {
+    opacity: 0.8;
+}
+
+.section-our-team-advisors .hexagon img {
+    width: 100%;
+}
+/*
 .section-our-team-advisors .hexagon:before,
 .section-our-team-advisors .hexagon:after {
   content: "";
@@ -1592,10 +1726,10 @@ footer ul.list-social li:not(:last-child)::after {
   top: 100%;
   width: 0;
   border-top: 56.60px solid #007AFF;
-}
+} */
 
 .section-our-team-advisors h2.our-advisor {
-    margin-top: 60px;
+    margin: 10px 0 20px;
 }
 
 /* COMMUNITY
