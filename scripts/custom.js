@@ -293,7 +293,7 @@ jQuery(function($) {
     formInquiry();
 
     setInterval(function() {
-        //activityFeed();
+        activityFeed();
     }, 10000);
 });
 
@@ -573,7 +573,7 @@ function activityFeed() {
     var temp;
 
     var request = $.ajax({
-        url: 'http://localhost:3000/feed-activity',
+        url: 'http://ico.openovate.com:4000/feed-activity',
         method: "GET",
         dataType: 'xml'
     });
@@ -590,7 +590,7 @@ function activityFeed() {
             feedTemp = temp.replace('{{DESCRIPTION}}', data.title)
                 .replace('{{AVATAR}}', data["media:thumbnail"]["@attributes"]["url"])
                 .replace('{{NAME}}', data.author.name)
-                .replace('{{TIMEAGO}}', moment(data.updated, "YYYYMMDD").tz('Asia/Manila').fromNow());
+                .replace('{{TIMEAGO}}', moment(data.updated).fromNow());
 
             // update feed activity list
             $('.card-git-feed .feed-list').append(feedTemp);
