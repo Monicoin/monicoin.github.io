@@ -293,7 +293,7 @@ jQuery(function($) {
     formInquiry();
 
     setInterval(function() {
-        activityFeed();
+        //activityFeed();
     }, 10000);
 });
 
