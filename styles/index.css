@@ -681,7 +681,7 @@ footer ul.list-social li:not(:last-child)::after {
     left: 0;
     position: absolute;
     top: 0;
-    width: 41%;
+    width: 37%;
 }
 
 .section-roadmap .section-title h2 {

@@ -293,7 +293,7 @@ jQuery(function($) {
     formInquiry();
 
     setInterval(function() {
-        //activityFeed();
+        activityFeed();
     }, 10000);
 });
 
@@ -573,7 +573,7 @@ function activityFeed() {
     var temp;
 
     var request = $.ajax({
-        url: 'http://ico.openovate.com:4000/feed-activity',
+        url: 'https://api.monico.ph:8443/feed-activity',
         method: "GET",
         dataType: 'xml'
     });
