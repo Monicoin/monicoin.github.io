@@ -99,17 +99,6 @@ function formAirdrop() {
             hasError = true;
         }
 
-        if (!$('#inputReddit').val() || $('#inputReddit').val().trim() === '') {
-            $('#inputReddit')
-                .addClass('is-invalid')
-                .val('')
-                .parent()
-                .find('.invalid-feedback')
-                .text('Reddit name is required.');
-
-            hasError = true;
-        }
-
         if (!hasError) {
             $('form.form-airdrop .form-items').removeClass('active');
             $('form.form-airdrop .form-beta').addClass('active');
