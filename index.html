@@ -1395,73 +1395,84 @@
                 </footer>
             </section>
         </div>
-    </body>
-    <!-- START: FEED TEMPLATE -->
-    <script id="feed-template" type="text/template">
-        <li class="feed-item">
-            <div class="d-flex">
-                <div class="feed-user-image">
-                    <img src="{{AVATAR}}" />
-                </div>
-                <div class="feed-details flex-fill">
-                    <div class="feed-username">{{NAME}}</div>
-                    <div class="feed-action">{{DESCRIPTION}}</div>
-                    <small class="text-muted"><time datetime="2018-07-19 00:00">{{TIMEAGO}}</time></small>
-                </div>
-            </div>
-        </li>
-    </script>
-    <!-- END: FEED TEMPLATE -->
-    <div class="modal fade modal-platform" id="modalPlatform" tabindex="-1" role="dialog" aria-labelledby="modalPlatformLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalPlatformLabel">Sign-up BETA</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form name="form-signup" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfTj60wncu3s5P2Lk7NeKM9eGndKB7HfvEzohX95huU2lvGUA/formResponse"
-                target="_self" method="GET" id="mG61Hd">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Platform</label>
-                            <input type="text" id="modalPlatformInput" disabled="disabled" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Platform" aria-describedby="i.desc.1060517969 i.err.1060517969" name="entry.2040635229" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
-                            <input type="text" id="modalPlatformInput" class="quantumWizTextinputPaperinputInput exportInput hidden" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Platform" aria-describedby="i.desc.1060517969 i.err.1060517969" name="entry.2040635229" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="form-group">
-                            <label>First Name</label>
-                            <input type="text" id="modalFirstName" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
-                            tabindex="0" aria-label="First Name" aria-describedby="i.desc.650698510 i.err.650698510" name="entry.2056521268" value="" dir="auto"
-                            data-initial-dir="auto" data-initial-value="">
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="form-group">
-                            <label>Last Name</label>
-                            <input type="text" id="modalLastName" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
-                            tabindex="0" aria-label="Last Name" aria-describedby="i.desc.550617508 i.err.550617508" name="entry.271440415" value="" dir="auto"
-                            data-initial-dir="auto" data-initial-value="">
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="text" id="modalEmail" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
-                            tabindex="0" aria-label="Email" aria-describedby="i.desc.370817563 i.err.370817563" name="entry.1563939636" value="" dir="auto"
-                            data-initial-dir="auto" data-initial-value="">
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="form-group modal-recaptcha-field">
-                            <div id="modalRecaptcha"></div>
-                            <div class="invalid-feedback"></div>
-                        </div>
+        <!-- END: FEED TEMPLATE -->
+        <div class="modal fade modal-platform" id="modalPlatform" tabindex="-1" role="dialog" aria-labelledby="modalPlatformLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPlatformLabel">Sign-up BETA</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary btn-modal-submit">Submit</button>
-                    </div>
-                </form>
+                    <form name="form-signup" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfTj60wncu3s5P2Lk7NeKM9eGndKB7HfvEzohX95huU2lvGUA/formResponse"
+                    target="_self" method="GET" id="mG61Hd">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>Platform</label>
+                                <input type="text" id="modalPlatformInput" disabled="disabled" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Platform" aria-describedby="i.desc.1060517969 i.err.1060517969" name="entry.2040635229" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                <input type="text" id="modalPlatformInput" class="quantumWizTextinputPaperinputInput exportInput hidden" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Platform" aria-describedby="i.desc.1060517969 i.err.1060517969" name="entry.2040635229" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" id="modalFirstName" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
+                                tabindex="0" aria-label="First Name" aria-describedby="i.desc.650698510 i.err.650698510" name="entry.2056521268" value="" dir="auto"
+                                data-initial-dir="auto" data-initial-value="">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" id="modalLastName" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
+                                tabindex="0" aria-label="Last Name" aria-describedby="i.desc.550617508 i.err.550617508" name="entry.271440415" value="" dir="auto"
+                                data-initial-dir="auto" data-initial-value="">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" id="modalEmail" class="quantumWizTextinputPaperinputInput exportInput form-control" jsname="YPqjbf" autocomplete="off"
+                                tabindex="0" aria-label="Email" aria-describedby="i.desc.370817563 i.err.370817563" name="entry.1563939636" value="" dir="auto"
+                                data-initial-dir="auto" data-initial-value="">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group modal-recaptcha-field">
+                                <div id="modalRecaptcha"></div>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-modal-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+
+        <!-- START: FEED TEMPLATE -->
+        <script id="feed-template" type="text/template">
+            <li class="feed-item">
+                <div class="d-flex">
+                    <div class="feed-user-image">
+                        <img src="{{AVATAR}}" />
+                    </div>
+                    <div class="feed-details flex-fill">
+                        <div class="feed-username">{{NAME}}</div>
+                        <div class="feed-action">{{DESCRIPTION}}</div>
+                        <small class="text-muted"><time datetime="2018-07-19 00:00">{{TIMEAGO}}</time></small>
+                    </div>
+                </div>
+            </li>
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125522002-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-125522002-1');
+        </script>
+    </body>
 </html>
