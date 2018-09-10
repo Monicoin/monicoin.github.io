@@ -924,7 +924,6 @@ footer ul.list-social li:not(:last-child)::after {
     list-style: none;
     overflow-y: scroll;
     padding: 0;
-    padding-right: 17px;
     position: absolute;
     left: 0;
     margin-bottom: 0;
