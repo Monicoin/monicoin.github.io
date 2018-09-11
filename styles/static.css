@@ -97,9 +97,17 @@ footer ul li:not(:last-child)::after {
     top: 7px;
 }
 
+footer ul.list-social li:not(:last-child)::after {
+    content: '';
+}
+
 footer ul li a,
 footer ul li a:hover {
     color: #FFFFFF;
+}
+
+footer ul.list-social {
+    font-size: 25px;
 }
 
 @media screen and (max-width: 990px) {

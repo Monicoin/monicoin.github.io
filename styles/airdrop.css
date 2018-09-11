@@ -347,6 +347,14 @@ footer ul li a:hover {
     color: #FFFFFF;
 }
 
+footer ul.list-social {
+    font-size: 25px;
+}
+
+footer ul.list-social li:not(:last-child)::after {
+    content: '';
+}
+
 @media screen and (max-width: 990px) {
     .main-wrapper .give-away {
         padding: 80px 0;
