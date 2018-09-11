@@ -958,6 +958,7 @@ footer ul.list-social li:not(:last-child)::after {
 
 .section-roadmap .card-git-feed .feed-list .feed-item .feed-details {
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section-roadmap .card-git-feed .feed-list .feed-details .feed-username {
