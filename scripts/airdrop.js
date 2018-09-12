@@ -209,7 +209,7 @@ function fbShare() {
     FB.ui({
         method: 'share',
         display: 'popup',
-        href: 'https://www.monico.ph/',
+        href: 'https://www.moni.co/',
     }, function(response){});
 }
 
