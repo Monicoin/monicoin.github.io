@@ -69,6 +69,7 @@ body .wrapper {
 header .navbar {
     padding: 10px;
     transition: top 0.3s;
+    transition: height 1s;
 }
 
 header h1 {
@@ -101,12 +102,18 @@ header .navbar-dark {
     right: 0;
 }
 
+header .bg-blue {
+    background: #007AFF !important;
+    height: 60px;
+}
+
 /* SIDE NAVIGATION
 ------------------------------------------ */
 .side-navigation {
     left: -120px;
+    margin-top: -130px;
     position: fixed;
-    top: 20px;
+    top: 50%;
     transition: left 500ms;
     z-index: 9999;
 }

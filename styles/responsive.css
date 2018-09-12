@@ -824,6 +824,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    header .bg-blue {
+        height: auto;
+    }
+
     .section-hero {
         padding-top: 110px;
     }

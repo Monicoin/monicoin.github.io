@@ -248,10 +248,10 @@ jQuery(function($) {
 
         var nextSection = $('#section-pain-points').offset();
 
-        $('header .navbar').css('top', '0');
+        $('header .navbar-dark').removeClass('bg-blue');
 
         if (top > 0) {
-            $('header .navbar').css('top', '-' + headHeight + 'px');
+            $('header .navbar-dark').addClass('bg-blue');
         }
 
         if (top > nextSection.top - 100) {
