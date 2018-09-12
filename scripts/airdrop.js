@@ -11,6 +11,26 @@ function formAirdrop() {
     var widthFourth = (formWidth - itemWidth) / 4;
     var widthHalf = (formWidth - itemWidth) / 2;
 
+    var location = window.location;
+
+    var params = getURLParameters(location.href);
+
+    if (params.utm_content) {
+        $('#inputUtmContent').val(params.utm_content);
+    }
+
+    if (params.utm_medium) {
+        $('#inputUtmMedium').val(params.utm_medium);
+    }
+
+    if (params.utm_source) {
+        $('#inputUtmSource').val(params.utm_source);
+    }
+
+    if (params.utm_campaign) {
+        $('#inputUtmCampaign').val(params.utm_campaign);
+    }
+
     $('form.form-airdrop').animate({'margin-left' :  widthHalf + 'px'});
 
     $('.btn-back').on('click', function(e) {
@@ -217,4 +237,21 @@ function fbShare() {
 function validateEmail(email) {
     var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regex.test(String(email).toLowerCase());
+}
+
+function getURLParameters(url) {
+    var result = {};
+    var searchIndex = url.indexOf("?");
+
+    if (searchIndex == -1 ) return result;
+
+    var sPageURL = url.substring(searchIndex +1);
+    var sURLVariables = sPageURL.split('&');
+
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        result[sParameterName[0]] = sParameterName[1];
+    }
+
+    return result;
 }
