@@ -292,7 +292,7 @@ jQuery(function($) {
     // call fuction for form inquiry
     formInquiry();
 
-    setInterval(function() {
+    setTimeout(function() {
         activityFeed();
     }, 10000);
 });

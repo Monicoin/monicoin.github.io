@@ -32,7 +32,10 @@ body {
 /* HEAD
 ------------------------------------------ */
 header .navbar {
+    position: fixed;
     background: #007AFF;
+    left: 0;
+    right: 0;
 }
 
 header .navbar-dark .navbar-nav .nav-link {
@@ -50,7 +53,7 @@ header .navbar-dark .navbar-nav .nav-link.btn {
 ------------------------------------------ */
 .main-wrapper {
     min-height: 700px;
-    padding: 40px 0;
+    padding: 60px 0 40px;
 }
 
 .main-wrapper h1 {
