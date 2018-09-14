@@ -930,6 +930,7 @@ footer ul.list-social li:not(:last-child)::after {
     bottom: 0;
     list-style: none;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 0;
     position: absolute;
     left: 0;
