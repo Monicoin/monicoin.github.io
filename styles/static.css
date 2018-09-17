@@ -61,6 +61,7 @@ header .navbar-dark .navbar-nav .nav-link.btn {
     font-family: 'Oswald', sans-serif;
     font-size: 45px;
     margin-bottom: 20px;
+    padding-top: 30px;
 }
 
 .main-wrapper h2, .main-wrapper h3 {
