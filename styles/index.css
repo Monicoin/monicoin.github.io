@@ -1006,7 +1006,7 @@ footer ul.list-social li:not(:last-child)::after {
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 50px;
-    color: #007bff;
+    color: #007bff !important;
     margin-top: 50px;
     width: 370px;
 }
