@@ -1699,9 +1699,15 @@ footer ul.list-social li:not(:last-child)::after {
 }
 
 .section-our-team-advisors .hexagon {
-    margin: 60px auto 15px;
+    margin: 0 auto 15px;
     position: relative;
     width: 200px;
+}
+
+.section-our-team-advisors .hexagon.hexagon-4 {
+    margin: 0 auto 10px;
+    position: relative;
+    width: 150px;
 }
 
 .section-our-team-advisors .hexagon a {
@@ -1715,6 +1721,7 @@ footer ul.list-social li:not(:last-child)::after {
 .section-our-team-advisors .hexagon img {
     width: 100%;
 }
+
 /*
 .section-our-team-advisors .hexagon:before,
 .section-our-team-advisors .hexagon:after {
@@ -1738,6 +1745,10 @@ footer ul.list-social li:not(:last-child)::after {
 
 .section-our-team-advisors h2.our-advisor {
     margin: 10px 0 20px;
+}
+
+.section-our-team-advisors .social-linkedin {
+    font-size: 20px;
 }
 
 /* COMMUNITY
