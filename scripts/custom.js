@@ -181,7 +181,7 @@ jQuery(function($) {
             }
 
             slide();
-        }, 4000);
+        }, 15000);
     }
 
     $('.hero-slider-btn').on('click', 'li', function(e, banner = true) {
